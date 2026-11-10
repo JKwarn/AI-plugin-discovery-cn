@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "taxonomy_version": "1.0.0",
+  "dimension": "functions",
+  "nodes": [
+    {
+      "id": "function.software_engineering",
+      "slug": "software-engineering",
+      "name": {
+        "zh-CN": "软件工程",
+        "en": "Software Engineering"
+      },
+      "description": {
+        "zh-CN": "软件工程相关能力",
+        "en": "Capabilities related to software engineering"
+      },
+      "parent_id": null,
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "function.codebase_analysis",
+      "slug": "codebase-analysis",
+      "name": {
+        "zh-CN": "代码库分析",
+        "en": "Codebase Analysis"
+      },
+      "description": {
+        "zh-CN": "代码库分析相关能力",
+        "en": "Capabilities related to codebase analysis"
+      },
+      "parent_id": "function.software_engineering",
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "function.software_design",
+      "slug": "software-design",
+      "name": {
+        "zh-CN": "软件设计",
+        "en": "Software Design"
+      },
+      "description": {
+        "zh-CN": "软件设计相关能力",
+        "en": "Capabilities related to software design"
+      },
+      "parent_id": "function.software_engineering",
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "function.software_testing",
+      "slug": "software-testing",
+      "name": {
+        "zh-CN": "软件测试",
+        "en": "Software Testing"
+      },
+      "description": {
+        "zh-CN": "软件测试相关能力",
+        "en": "Capabilities related to software testing"
+      },
+      "parent_id": "function.software_engineering",
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "function.test_driven_development",
+      "slug": "test-driven-development",
+      "name": {
+        "zh-CN": "测试驱动开发",
+        "en": "Test-Driven Development"
+      },
+      "description": {
+        "zh-CN": "测试驱动开发相关能力",
+        "en": "Capabilities related to test-driven development"
+      },
+      "parent_id": "function.software_testing",
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    }
+  ]
+}

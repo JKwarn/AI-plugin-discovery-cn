@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "skills": [
+    {
+      "id": "pstack.how",
+      "plugin_id": "pstack",
+      "source_path": "pstack/skills/how/SKILL.md"
+    },
+    {
+      "id": "pstack.architect",
+      "plugin_id": "pstack",
+      "source_path": "pstack/skills/architect/SKILL.md"
+    },
+    {
+      "id": "pstack.tdd",
+      "plugin_id": "pstack",
+      "source_path": "pstack/skills/tdd/SKILL.md"
+    }
+  ]
+}

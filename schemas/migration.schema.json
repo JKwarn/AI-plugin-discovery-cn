@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/JKwarn/AI-plugin-discovery-cn/main/schemas/migration.schema.json",
+  "title": "Taxonomy migrations",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "migrations"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "migrations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/migration"
+      }
+    }
+  },
+  "$defs": {
+    "migration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "migration_id",
+        "type",
+        "dimension",
+        "from_ids",
+        "to_ids",
+        "effective_at",
+        "reason"
+      ],
+      "properties": {
+        "migration_id": {
+          "type": "string",
+          "pattern": "^migration\\.[a-z0-9._-]+$"
+        },
+        "type": {
+          "enum": [
+            "merge",
+            "split",
+            "deprecate",
+            "archive"
+          ]
+        },
+        "dimension": {
+          "enum": [
+            "functions",
+            "roles",
+            "scenarios",
+            "tags"
+          ]
+        },
+        "from_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "to_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "effective_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
