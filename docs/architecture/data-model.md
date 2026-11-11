@@ -1,6 +1,6 @@
 # 数据模型规范（v1.0.0，核心契约已冻结）
 
-本文定义本仓库分类数据模型 v1.0.0。七份 JSON Schema 与本文共同构成当前核心数据契约。正式数据和测试夹具必须遵守这些结构；不得在不升级 `schema_version` 的情况下改变字段含义或结构。
+本文定义本仓库分类数据模型 v1.0.0。七份 JSON Schema 与本文共同构成当前核心数据契约。正式数据和测试夹具必须遵守这些结构；不得在不升级 `schema_version` 的情况下改变字段含义或结构。译文注册表属于独立的内容数据契约，见[译文存储与来源追踪](translations.md)。
 
 ## 1. 数据文件
 
@@ -15,8 +15,9 @@
 | `data/assignments/skills.json` | Skill 到分类节点的直接关联 | `assignment.schema.json` |
 | `data/proposals/index.json` | 待审核分类/关联提案 | `proposal.schema.json` |
 | `data/taxonomy/changelog.json` | 正式分类变更摘要 | `changelog.schema.json` |
+| `data/translations/skills.json` | Skill 中文译文与上游来源的对应关系 | `translation-index.schema.json` |
 
-Plugin 和 Skill 上游索引、来源快照属于资源同步模型，不属于本次分类核心 Schema 冻结范围。
+Plugin 和 Skill 上游索引、来源快照属于资源同步模型，不属于本次分类核心 Schema 冻结范围。译文注册表独立于上游同步索引，不能由同步程序覆盖。
 
 ## 2. 版本规则
 

@@ -38,3 +38,4 @@ jobs:
         run: |
           python scripts/validate/validate_taxonomy.py
           python scripts/validate/validate_taxonomy_contract.py
+          python scripts/validate/validate_translations.py
