@@ -21,3 +21,25 @@ def test_strict_mode_requires_approved_function(data_dir, schemas_dir):
     validator = Validator(data_dir, schemas_dir, strict_approved=True)
     assert not validator.run()
     assert any("approved function assignment is required" in error for error in validator.errors)
+
+
+
+def test_strict_mode_ignores_removed_skills(tmp_path, data_dir, schemas_dir):
+    copied = tmp_path / "data"
+    shutil.copytree(data_dir, copied)
+
+    skill_path = copied / "skills" / "index.json"
+    skill_doc = json.loads(skill_path.read_text(encoding="utf-8"))
+    removed = dict(skill_doc["skills"][0])
+    removed["status"] = "removed"
+    removed["removed_in_revision"] = "a" * 40
+    skill_doc["skills"] = [removed]
+    skill_path.write_text(json.dumps(skill_doc), encoding="utf-8")
+
+    assignment_path = copied / "assignments" / "skills.json"
+    assignment_doc = json.loads(assignment_path.read_text(encoding="utf-8"))
+    assignment_doc["assignments"] = {}
+    assignment_path.write_text(json.dumps(assignment_doc), encoding="utf-8")
+
+    validator = Validator(copied, schemas_dir, strict_approved=True)
+    assert validator.run(), validator.errors
