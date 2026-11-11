@@ -50,6 +50,3 @@ jobs:
             It updates current Plugin and Skill metadata, preserves historical source snapshots,
             and records additions, modifications, and removals. It does not copy Skill documents,
             translate content, approve taxonomy assignments, or modify the upstream repository.
-          labels: |
-            data-sync
-            automated
