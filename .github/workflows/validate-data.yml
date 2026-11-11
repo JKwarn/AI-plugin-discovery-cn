@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - "foundation/**"
+      - "feature/**"
   pull_request:
     branches:
       - main
@@ -34,4 +35,6 @@ jobs:
         run: python -m pytest
 
       - name: Validate repository data
-        run: python scripts/validate/validate_taxonomy.py
+        run: |
+          python scripts/validate/validate_taxonomy.py
+          python scripts/validate/validate_taxonomy_contract.py

@@ -7,7 +7,8 @@
   "required": [
     "schema_version",
     "taxonomy_version",
-    "dimensions"
+    "dimensions",
+    "id_prefixes"
   ],
   "properties": {
     "schema_version": {
