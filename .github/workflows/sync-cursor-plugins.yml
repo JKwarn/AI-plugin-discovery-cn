@@ -28,13 +28,13 @@ jobs:
         with:
           repository: cursor/plugins
           ref: main
-          path: upstream/cursor-plugins
+          path: ${{ runner.temp }}/cursor-plugins
           fetch-depth: 1
 
       - name: Synchronize source metadata
         run: |
           python scripts/sync/sync_cursor_plugins.py \
-            --source-dir upstream/cursor-plugins \
+            --source-dir "${{ runner.temp }}/cursor-plugins" \
             --data-dir data
 
       - name: Create or update synchronization pull request
