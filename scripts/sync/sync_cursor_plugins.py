@@ -125,6 +125,10 @@ def source_url(repository: str, revision: str, path: str) -> str:
     return f"{repository.rstrip('/')}/blob/{revision}/{path}"
 
 
+def source_tree_url(repository: str, revision: str, path: str) -> str:
+    return f"{repository.rstrip('/')}/tree/{revision}/{path}"
+
+
 def read_json(path: Path, default: Any) -> Any:
     if not path.exists():
         return default
@@ -141,14 +145,21 @@ def write_json(path: Path, document: Any) -> None:
     temporary.replace(path)
 
 
-def active_records(document: dict[str, Any], key: str) -> dict[str, dict[str, Any]]:
+def all_records(document: dict[str, Any], key: str) -> dict[str, dict[str, Any]]:
     records = document.get(key, [])
     if not isinstance(records, list):
         raise SyncError(f"Expected '{key}' to be an array")
     return {
         item["id"]: item for item in records
         if isinstance(item, dict) and isinstance(item.get("id"), str)
-        and item.get("status", "active") == "active"
+    }
+
+
+def active_records(document: dict[str, Any], key: str) -> dict[str, dict[str, Any]]:
+    return {
+        resource_id: item
+        for resource_id, item in all_records(document, key).items()
+        if item.get("status", "active") == "active"
     }
 
 
@@ -201,7 +212,7 @@ def build_current_resources(
             "id": plugin_id, "name": primary["name"],
             "display_name": primary.get("display_name") or primary["name"],
             "description": primary.get("description") or "", "source_path": root,
-            "source_url": source_url(repository, revision, root),
+            "source_url": source_tree_url(repository, revision, root),
             "source_revision": revision, "manifests": records, "status": "active",
         })
 
@@ -285,8 +296,9 @@ def add_removed_records(
     for resource_id, old in previous.items():
         if resource_id not in current_ids:
             removed = dict(old)
-            removed["status"] = "removed"
-            removed["removed_in_revision"] = revision
+            if old.get("status", "active") != "removed":
+                removed["status"] = "removed"
+                removed["removed_in_revision"] = revision
             result.append(removed)
     return sorted(result, key=lambda item: item["id"])
 
@@ -325,7 +337,16 @@ def synchronize(
     source_index = read_json(source_index_path, {"schema_version": "1.0.0", "sources": []})
     plugin_index = read_json(plugin_index_path, {"schema_version": "1.0.0", "plugins": []})
     skill_index = read_json(skill_index_path, {"schema_version": "1.0.0", "skills": []})
-    previous_plugins, previous_skills = active_records(plugin_index, "plugins"), active_records(skill_index, "skills")
+    previous_all_plugins = all_records(plugin_index, "plugins")
+    previous_all_skills = all_records(skill_index, "skills")
+    previous_plugins = {
+        key: value for key, value in previous_all_plugins.items()
+        if value.get("status", "active") == "active"
+    }
+    previous_skills = {
+        key: value for key, value in previous_all_skills.items()
+        if value.get("status", "active") == "active"
+    }
 
     preserve_file_revisions(current_plugins, previous_plugins, nested_key="manifests")
     preserve_file_revisions(current_skills, previous_skills)
@@ -333,8 +354,8 @@ def synchronize(
         "plugins": compare_resources(current_plugins, previous_plugins, "plugins"),
         "skills": compare_resources(current_skills, previous_skills, "skills"),
     }
-    all_plugins = add_removed_records(current_plugins, previous_plugins, revision)
-    all_skills = add_removed_records(current_skills, previous_skills, revision)
+    all_plugins = add_removed_records(current_plugins, previous_all_plugins, revision)
+    all_skills = add_removed_records(current_skills, previous_all_skills, revision)
 
     source_records = source_index.get("sources", [])
     if not isinstance(source_records, list):
