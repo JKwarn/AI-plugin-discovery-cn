@@ -36,7 +36,7 @@ jobs:
             --data-dir data
 
       - name: Create or update synchronization pull request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: automation/cursor-plugins-sync
           delete-branch: true
