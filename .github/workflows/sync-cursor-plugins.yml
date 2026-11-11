@@ -23,18 +23,16 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Check out Cursor Plugins
-        uses: actions/checkout@v5
-        with:
-          repository: cursor/plugins
-          ref: main
-          path: ${{ runner.temp }}/cursor-plugins
-          fetch-depth: 1
+      - name: Clone Cursor Plugins into temporary directory
+        run: |
+          git clone --depth 1 --branch main \
+            https://github.com/cursor/plugins.git \
+            "${RUNNER_TEMP}/cursor-plugins"
 
       - name: Synchronize source metadata
         run: |
           python scripts/sync/sync_cursor_plugins.py \
-            --source-dir "${{ runner.temp }}/cursor-plugins" \
+            --source-dir "${RUNNER_TEMP}/cursor-plugins" \
             --data-dir data
 
       - name: Create or update synchronization pull request
