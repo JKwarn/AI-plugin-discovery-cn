@@ -1,6 +1,6 @@
-import copy
 import json
 from pathlib import Path
+import shutil
 
 from scripts.build.aggregate_taxonomy import aggregate_taxonomy
 
@@ -23,8 +23,6 @@ def make_approved(data_dir):
 def copy_fixture(tmp_path):
     source = Path(__file__).resolve().parents[1] / "fixtures" / "pstack" / "data"
     target = tmp_path / "data"
-    import shutil
-
     shutil.copytree(source, target)
     return target
 
