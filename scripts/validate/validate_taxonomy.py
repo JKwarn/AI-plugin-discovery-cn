@@ -281,6 +281,18 @@ class Validator:
                             f"{change_id}: migration dimension '{migration.get('dimension')}' "
                             f"does not match changelog dimension '{dimension}'"
                         )
+                    elif migration.get("type") != entry.get("type"):
+                        self.error(
+                            f"{change_id}: migration type '{migration.get('type')}' "
+                            f"does not match changelog type '{entry.get('type')}'"
+                        )
+                    else:
+                        affected_ids = set(migration.get("from_ids", [])) | set(migration.get("to_ids", []))
+                        changelog_ids = set(entry.get("category_ids", []))
+                        if changelog_ids != affected_ids:
+                            self.error(
+                                f"{change_id}: category_ids must match migration from_ids and to_ids"
+                            )
 
     def run(self) -> bool:
         self.load_schemas()
