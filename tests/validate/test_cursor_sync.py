@@ -59,6 +59,7 @@ def test_sync_discovers_plugins_skills_and_manifest_formats(tmp_path: Path):
     plugins = json.loads((data / "plugins" / "index.json").read_text(encoding="utf-8"))
     by_id = {item["id"]: item for item in plugins["plugins"]}
     assert by_id["demo"]["display_name"] == "Demo Plugin"
+    assert "/tree/" in by_id["demo"]["source_url"]
     assert {x["format"] for x in by_id["demo"]["manifests"]} == {"cursor-plugin", "agent-plugin"}
     assert by_id["third_party.sample"]["manifests"][0]["format"] == "claude-plugin"
     skills = json.loads((data / "skills" / "index.json").read_text(encoding="utf-8"))
@@ -107,3 +108,12 @@ def test_sync_records_changes_and_keeps_removed_resources_as_tombstones(tmp_path
     assert by_id["demo.alpha"]["source_revision"] == report["revision"]
     assert by_id["demo.new-skill"]["status"] == "active"
     assert len(list((data / "sources" / "snapshots" / "cursor.plugins").glob("*.json"))) == 2
+
+    # A subsequent sync must retain tombstones instead of dropping old records.
+    synchronize(source, data)
+    index_after_repeat = json.loads(
+        (data / "skills" / "index.json").read_text(encoding="utf-8")
+    )
+    by_id_after_repeat = {x["id"]: x for x in index_after_repeat["skills"]}
+    assert by_id_after_repeat["demo.obsolete"]["status"] == "removed"
+    assert by_id_after_repeat["demo.obsolete"]["removed_in_revision"] == report["revision"]
