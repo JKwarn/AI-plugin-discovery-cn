@@ -1,4 +1,3269 @@
 {
   "schema_version": "1.0.0",
-  "plugins": []
+  "plugins": [
+    {
+      "id": "advisor",
+      "name": "advisor",
+      "display_name": "Advisor",
+      "description": "Consult a stronger model at key checkpoints: before major decisions, when stuck on an error, and before declaring a task done. The advisor gets a full briefing plus the conversation transcript, returns guidance, and the main model keeps doing the work.",
+      "source_path": "advisor",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/advisor",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "advisor/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "advisor",
+          "display_name": "Advisor",
+          "description": "Consult a stronger model at key checkpoints: before major decisions, when stuck on an error, and before declaring a task done. The advisor gets a full briefing plus the conversation transcript, returns guidance, and the main model keeps doing the work.",
+          "version": "1.0.0",
+          "source_blob_sha": "1c5834f962f78ddba57ec7903b7b96c12d973410",
+          "source_file_hash": "c8d13c05df3c20de68ece4b261a819c910e47c95729e062f59d8854da342644b",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/advisor/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "agent-compatibility",
+      "name": "agent-compatibility",
+      "display_name": "Agent Compatibility",
+      "description": "CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality.",
+      "source_path": "agent-compatibility",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/agent-compatibility",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "agent-compatibility/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "agent-compatibility",
+          "display_name": "Agent Compatibility",
+          "description": "CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality.",
+          "version": "1.0.0",
+          "source_blob_sha": "a4c4aab1a6b42cd7641b7538b91290f916b70b07",
+          "source_file_hash": "218c292ffd6715f6fd60b3316ca37778ebc1e29b5b14f47183cae6581993f0df",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/agent-compatibility/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "cli-for-agent",
+      "name": "cli-for-agent",
+      "display_name": "CLI for Agents",
+      "description": "Patterns for designing CLIs that coding agents can run reliably: non-interactive flags, layered help with examples, pipelines, actionable errors, idempotency, and dry-run.",
+      "source_path": "cli-for-agent",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/cli-for-agent",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "cli-for-agent/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "cli-for-agent",
+          "display_name": "CLI for Agents",
+          "description": "Patterns for designing CLIs that coding agents can run reliably: non-interactive flags, layered help with examples, pipelines, actionable errors, idempotency, and dry-run.",
+          "version": "1.0.0",
+          "source_blob_sha": "a03b6e8d31c03681d70524b9878dda130238f08a",
+          "source_file_hash": "7cab83814421baed085fdb7e763cdf2b0ca15f256e1e24c00c269879c7b2ee09",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/cli-for-agent/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "continual-learning",
+      "name": "continual-learning",
+      "display_name": "Continual Learning",
+      "description": "Incrementally learns durable user preferences and workspace facts from transcript changes and keeps AGENTS.md up to date with plain bullet points.",
+      "source_path": "continual-learning",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/continual-learning",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "continual-learning/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "continual-learning",
+          "display_name": "Continual Learning",
+          "description": "Incrementally learns durable user preferences and workspace facts from transcript changes and keeps AGENTS.md up to date with plain bullet points.",
+          "version": "1.0.0",
+          "source_blob_sha": "3255db70ab63ea412a2a017f621491bee2ba0496",
+          "source_file_hash": "274196bf1fc7755fbf6d86cb7987f8248110d3b3b81557f87b936a6a1918affc",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/continual-learning/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "create-plugin",
+      "name": "create-plugin",
+      "display_name": "Create Plugin",
+      "description": "Scaffold and validate new agent plugins. Handles directory setup, manifest generation, and pre-submission quality checks for the marketplace.",
+      "source_path": "create-plugin",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/create-plugin",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "create-plugin/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "create-plugin",
+          "display_name": "Create Plugin",
+          "description": "Scaffold and validate new agent plugins. Handles directory setup, manifest generation, and pre-submission quality checks for the marketplace.",
+          "version": "1.0.0",
+          "source_blob_sha": "b401bba2033206b12160ec6e8ac7a9767cc87ac0",
+          "source_file_hash": "e388e72a54aa6c69f09016f7447aebc7181153e000dae957849fcdf9531cbf97",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/create-plugin/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "cursor-sdk",
+      "name": "cursor-sdk",
+      "display_name": "Cursor SDK",
+      "description": "Build apps, scripts, and automations with the TypeScript SDK.",
+      "source_path": "cursor-sdk",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/cursor-sdk",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "cursor-sdk/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "cursor-sdk",
+          "display_name": "Cursor SDK",
+          "description": "Build apps, scripts, and automations with the TypeScript SDK.",
+          "version": "1.0.0",
+          "source_blob_sha": "fe37d76b26752e4b46e15cac9c0347fb1109e107",
+          "source_file_hash": "71c345e7160cd2df289f75fa71ae933de7148a6bfce6e3a94b5210c4e0e02e9f",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/cursor-sdk/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "cursor-team-kit",
+      "name": "cursor-team-kit",
+      "display_name": "Cursor Team Kit",
+      "description": "Internal engineering team workflows for CI, code review, shipping, control-cli, control-ui, verify-this, test reliability, code cleanup, and work summaries. Designed to work without requiring third-party service integrations.",
+      "source_path": "cursor-team-kit",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/cursor-team-kit",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "cursor-team-kit/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "cursor-team-kit",
+          "display_name": "Cursor Team Kit",
+          "description": "Internal engineering team workflows for CI, code review, shipping, control-cli, control-ui, verify-this, test reliability, code cleanup, and work summaries. Designed to work without requiring third-party service integrations.",
+          "version": "1.2.0",
+          "source_blob_sha": "23a67962d468e87ea256a225f713cc8996a974b0",
+          "source_file_hash": "9c8622d0577205959b6469a5454cbe2787ad3c6412439759328e92dc0115584d",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/cursor-team-kit/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "docs-canvas",
+      "name": "docs-canvas",
+      "display_name": "Docs Canvas",
+      "description": "Render documentation as a navigable canvas.",
+      "source_path": "docs-canvas",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/docs-canvas",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "docs-canvas/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "docs-canvas",
+          "display_name": "Docs Canvas",
+          "description": "Render documentation as a navigable canvas.",
+          "version": "0.1.0",
+          "source_blob_sha": "0f93f2339f04af8ff50ca2bfa15f190f7356c5f7",
+          "source_file_hash": "8530d3c6fb349ac14ad78bb23ecd101c86cfd8748668a7e061f48e66f81d8a59",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/docs-canvas/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "dyl-stack",
+      "name": "dyl-stack",
+      "display_name": "dyl-stack",
+      "description": "Dylan's agent style on top of pstack: root causes over symptom patches, The Algorithm before design, terse verified delivery, a PR review that fits in a paste, and Figma-to-UI with a visual judge.",
+      "source_path": "dyl-stack",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/dyl-stack",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "dyl-stack/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "dyl-stack",
+          "display_name": "dyl-stack",
+          "description": "Dylan's agent style on top of pstack: root causes over symptom patches, The Algorithm before design, terse verified delivery, a PR review that fits in a paste, and Figma-to-UI with a visual judge.",
+          "version": "0.1.0",
+          "source_blob_sha": "a7df04d43fe1dcc32e2d59135cce4afc6bf8328c",
+          "source_file_hash": "15bb19dab823e7d491005c6d84918b06a039d1b8fe9cc9bd23de89b3b9e80e79",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/dyl-stack/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "grok-voice",
+      "name": "grok-voice",
+      "display_name": "Grok Voice",
+      "description": "Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
+      "source_path": "grok-voice",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/grok-voice",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "grok-voice/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "grok-voice",
+          "display_name": "Grok Voice",
+          "description": "Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
+          "version": "0.1.0",
+          "source_blob_sha": "14243fa1d6a50c6759b492ad261678560a387960",
+          "source_file_hash": "d7e7f9d3645bc28aa599737b5d0438952c8904edc62c7bfbd73ca18ee506fb1a",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/grok-voice/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "harness.pstack.claude-code",
+      "name": "pstack",
+      "display_name": "pstack",
+      "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "source_path": "harness/pstack/claude-code",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/harness/pstack/claude-code",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "harness/pstack/claude-code/plugin.json",
+          "format": "agent-plugin",
+          "name": "pstack",
+          "display_name": null,
+          "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+          "version": "0.15.36",
+          "source_blob_sha": "14b42b7225231a2f01ab225df1d9d13839c6d616",
+          "source_file_hash": "ebc3ee08ceff88b13521cabd714d92b972fbe9c5b77116f94872ee848b225b31",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/harness/pstack/claude-code/plugin.json"
+        },
+        {
+          "path": "harness/pstack/claude-code/.claude-plugin/plugin.json",
+          "format": "claude-plugin",
+          "name": "pstack",
+          "display_name": null,
+          "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+          "version": "0.15.36",
+          "source_blob_sha": "14b42b7225231a2f01ab225df1d9d13839c6d616",
+          "source_file_hash": "ebc3ee08ceff88b13521cabd714d92b972fbe9c5b77116f94872ee848b225b31",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/harness/pstack/claude-code/.claude-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "orchestrate",
+      "name": "orchestrate",
+      "display_name": "Orchestrate",
+      "description": "Fan a large task out across parallel cloud agents via the Cursor SDK: planners publish tasks, workers hand off back up, and a script reconciles the tree from disk and git.",
+      "source_path": "orchestrate",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/orchestrate",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "orchestrate/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "orchestrate",
+          "display_name": "Orchestrate",
+          "description": "Fan a large task out across parallel cloud agents via the Cursor SDK: planners publish tasks, workers hand off back up, and a script reconciles the tree from disk and git.",
+          "version": "1.1.0",
+          "source_blob_sha": "a2784baab5cc67742826daa1e9015918b8e948d5",
+          "source_file_hash": "9c4623c73382058a0eba91e9f1f3ec4a46139698ab827bcdc1f20d311d00df5d",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/orchestrate/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "origin-apps",
+      "name": "origin-apps",
+      "display_name": "Origin Apps",
+      "description": "Skills for building on the Cursor Origin API. Fetch the live spec first, then follow the Origin rules for credentials, scopes, webhooks, paging, and errors. Includes a skill that plans the port of an existing GitHub App.",
+      "source_path": "origin-apps",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/origin-apps",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "origin-apps/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "origin-apps",
+          "display_name": "Origin Apps",
+          "description": "Skills for building on the Cursor Origin API. Fetch the live spec first, then follow the Origin rules for credentials, scopes, webhooks, paging, and errors. Includes a skill that plans the port of an existing GitHub App.",
+          "version": "0.1.0",
+          "source_blob_sha": "bace676650146922d9c1c83d7ed7bfe2ea5c6a38",
+          "source_file_hash": "836f317d4f91eac6740ec164fdb7b7012b32eb407466b595e74147836b1892c0",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/origin-apps/.cursor-plugin/plugin.json"
+        },
+        {
+          "path": "origin-apps/plugin.json",
+          "format": "agent-plugin",
+          "name": "origin-apps",
+          "display_name": null,
+          "description": "Skills for building on the Cursor Origin API. Fetch the live spec first, then follow the Origin rules for credentials, scopes, webhooks, paging, and errors. Includes a skill that plans the port of an existing GitHub App.",
+          "version": "0.1.0",
+          "source_blob_sha": "5f0961dbe0ff28c79a7babc2cdf5e11c0afbe2dd",
+          "source_file_hash": "36f99b1835b0b4fc9bfb2e32c2bc710e22b4848bf8103528f560a4e5b5bacf7d",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/origin-apps/plugin.json"
+        },
+        {
+          "path": "origin-apps/.claude-plugin/plugin.json",
+          "format": "claude-plugin",
+          "name": "origin-apps",
+          "display_name": null,
+          "description": "Skills for building on the Cursor Origin API. Fetch the live spec first, then follow the Origin rules for credentials, scopes, webhooks, paging, and errors. Includes a skill that plans the port of an existing GitHub App.",
+          "version": "0.1.0",
+          "source_blob_sha": "ac67f840dd3ee99c95e787ae798b90de5fecef49",
+          "source_file_hash": "ad61a88cf5ff32a1e14e578ea354547fc96d3ff226b6ac26785b9659d292d35e",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/origin-apps/.claude-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pr-review-canvas",
+      "name": "pr-review-canvas",
+      "display_name": "PR Review Canvas",
+      "description": "Render PR diffs as review canvases grouped by importance.",
+      "source_path": "pr-review-canvas",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/pr-review-canvas",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "pr-review-canvas/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "pr-review-canvas",
+          "display_name": "PR Review Canvas",
+          "description": "Render PR diffs as review canvases grouped by importance.",
+          "version": "0.1.0",
+          "source_blob_sha": "03dd9f2c04a30484d2d527a08fcef6ad625f90ca",
+          "source_file_hash": "b14164bb3db45eb21d096b1b283470fd8a22e2f2c9af973a1517fab8314f54fe",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/pr-review-canvas/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pstack",
+      "name": "pstack",
+      "display_name": "pstack",
+      "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+      "source_path": "pstack",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/pstack",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "pstack/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "pstack",
+          "display_name": "pstack",
+          "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+          "version": "0.15.36",
+          "source_blob_sha": "1295f46878218d568a037344877f0b603a887696",
+          "source_file_hash": "d9e56eed06fc8f8920ff532873a403355d35f2905d2c86d1968ec4da0d1a5191",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/pstack/.cursor-plugin/plugin.json"
+        },
+        {
+          "path": "pstack/plugin.json",
+          "format": "agent-plugin",
+          "name": "pstack",
+          "display_name": null,
+          "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+          "version": "0.15.36",
+          "source_blob_sha": "14b42b7225231a2f01ab225df1d9d13839c6d616",
+          "source_file_hash": "ebc3ee08ceff88b13521cabd714d92b972fbe9c5b77116f94872ee848b225b31",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/pstack/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "ralph-loop",
+      "name": "ralph-loop",
+      "display_name": "Ralph Loop",
+      "description": "Continuous self-referential AI loops for iterative development, implementing the Ralph Wiggum technique. Run the agent in a while-true loop with the same prompt until task completion.",
+      "source_path": "ralph-loop",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/ralph-loop",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "ralph-loop/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "ralph-loop",
+          "display_name": "Ralph Loop",
+          "description": "Continuous self-referential AI loops for iterative development, implementing the Ralph Wiggum technique. Run the agent in a while-true loop with the same prompt until task completion.",
+          "version": "1.0.0",
+          "source_blob_sha": "529e02ea7b6380442271a346d4c94a1f76868051",
+          "source_file_hash": "9c7bc1a99c84fcff55b3ddaadc432f5dad46b9f35032ee6bcd18533ec69b37b0",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/ralph-loop/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "teaching",
+      "name": "teaching",
+      "display_name": "Teaching",
+      "description": "Skill mapping, practice plans, and learning retrospectives. Builds personalized roadmaps with milestones and practice checkpoints, and runs periodic reviews to adjust based on progress.",
+      "source_path": "teaching",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/teaching",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "teaching/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "teaching",
+          "display_name": "Teaching",
+          "description": "Skill mapping, practice plans, and learning retrospectives. Builds personalized roadmaps with milestones and practice checkpoints, and runs periodic reviews to adjust based on progress.",
+          "version": "1.0.0",
+          "source_blob_sha": "6691793e9ef4a3536f45b78bb7487ed1254e23a9",
+          "source_file_hash": "a1c1073b4c3d9b64370607d194b07dc336ba2ebaf2aadaec153d2575a93f8523",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/teaching/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "thermos",
+      "name": "thermos",
+      "display_name": "Thermos",
+      "description": "Thermo-nuclear branch review: deep correctness and security audits plus harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional take-the-wheel and FSD merge-ready flows.",
+      "source_path": "thermos",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/thermos",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "thermos/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "thermos",
+          "display_name": "Thermos",
+          "description": "Thermo-nuclear branch review: deep correctness and security audits plus harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional take-the-wheel and FSD merge-ready flows.",
+          "version": "1.0.0",
+          "source_blob_sha": "e1cb7cdea39a62d647f4e56b50da358d35c6c0f2",
+          "source_file_hash": "a9f5703ee225449ba7e23cbf68368a4d91542b69766685a9595aabaccdca1777",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/thermos/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.ahrefs",
+      "name": "ahrefs",
+      "display_name": "Ahrefs",
+      "description": "Research keywords, backlinks, rankings, and site health.",
+      "source_path": "third_party/ahrefs",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/ahrefs",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/ahrefs/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "ahrefs",
+          "display_name": "Ahrefs",
+          "description": "Research keywords, backlinks, rankings, and site health.",
+          "version": "1.0.0",
+          "source_blob_sha": "211ada982789ae7953700ef98a3c6898de9876b3",
+          "source_file_hash": "fd4b04472d70ac970233b969668ae2b0526aa0322c15027db2092dfa739927c4",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/ahrefs/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.amplemarket",
+      "name": "amplemarket",
+      "display_name": "Amplemarket",
+      "description": "Search people and companies, enrich leads, run sequences.",
+      "source_path": "third_party/amplemarket",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/amplemarket",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/amplemarket/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "amplemarket",
+          "display_name": "Amplemarket",
+          "description": "Search people and companies, enrich leads, run sequences.",
+          "version": "1.0.0",
+          "source_blob_sha": "be67dd443ae6a7da4beb7b1d4a6c84ae9ad463f6",
+          "source_file_hash": "3096ef83decc2b49ed19ed559b933d34697250add74f394dd74a955c82640b36",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/amplemarket/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.ashby",
+      "name": "ashby",
+      "display_name": "Ashby",
+      "description": "Search candidates, prep interviews, and manage pipeline tasks.",
+      "source_path": "third_party/ashby",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/ashby",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/ashby/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "ashby",
+          "display_name": "Ashby",
+          "description": "Search candidates, prep interviews, and manage pipeline tasks.",
+          "version": "1.0.0",
+          "source_blob_sha": "ca4578d7b970c17d141bc99dafd6c7bcdc8f77be",
+          "source_file_hash": "74d62f6c37561a9c4364d31f306c90f7e53cf7e12b29fdce11565cb9c665e1f7",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/ashby/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.attio",
+      "name": "attio",
+      "display_name": "Attio",
+      "description": "Search and update CRM records, lists, notes, and tasks.",
+      "source_path": "third_party/attio",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/attio",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/attio/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "attio",
+          "display_name": "Attio",
+          "description": "Search and update CRM records, lists, notes, and tasks.",
+          "version": "1.0.0",
+          "source_blob_sha": "79410d2bb3fea7a5adef878992c8b0a26f7339c0",
+          "source_file_hash": "094948560b9c9169190ec7ee338797e8b6f288f732a40c311a427956f88aa7fa",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/attio/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.beehiiv",
+      "name": "beehiiv",
+      "display_name": "beehiiv",
+      "description": "Run your beehiiv newsletter from chat: draft and edit posts, organize subscribers with tags, custom fields, and segments, build automations, and review publication, post, and website performance.",
+      "source_path": "third_party/beehiiv",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/beehiiv",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/beehiiv/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "beehiiv",
+          "display_name": "beehiiv",
+          "description": "Run your beehiiv newsletter from chat: draft and edit posts, organize subscribers with tags, custom fields, and segments, build automations, and review publication, post, and website performance.",
+          "version": "1.0.1",
+          "source_blob_sha": "584294349f8a46b7ca66adba2370cd9bbc0a19e2",
+          "source_file_hash": "a04429b992a8feb402749fddf63565d38f8dd2f9b4dc543c15796749fbe79c10",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/beehiiv/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.brevo",
+      "name": "brevo",
+      "display_name": "Brevo",
+      "description": "Manage contacts, email and SMS campaigns, and CRM deals.",
+      "source_path": "third_party/brevo",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/brevo",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/brevo/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "brevo",
+          "display_name": "Brevo",
+          "description": "Manage contacts, email and SMS campaigns, and CRM deals.",
+          "version": "1.0.0",
+          "source_blob_sha": "3eac25e6a7ce4f55da499898c1c7039a18b3a935",
+          "source_file_hash": "8ffa844d2183c723a5159ed6d45eb11c0fd6b81bbdac5c3152fa932aaa2f9585",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/brevo/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.brex",
+      "name": "brex",
+      "display_name": "Brex",
+      "description": "Query expenses, receipts, bills, cards, and travel.",
+      "source_path": "third_party/brex",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/brex",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/brex/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "brex",
+          "display_name": "Brex",
+          "description": "Query expenses, receipts, bills, cards, and travel.",
+          "version": "1.0.0",
+          "source_blob_sha": "d251d3a9c9233ea72e6d7b58ad9ac4b6ed61ef62",
+          "source_file_hash": "5fc4879a0d1b237182f80581d8b010fadf39487c6a2d73945f308ce1fc3bcaf1",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/brex/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.buffer",
+      "name": "buffer",
+      "display_name": "Buffer",
+      "description": "Manage social media with Buffer: draft, schedule, and publish posts across connected channels, manage the queue and ideas, and review post performance.",
+      "source_path": "third_party/buffer",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/buffer",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/buffer/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "buffer",
+          "display_name": "Buffer",
+          "description": "Manage social media with Buffer: draft, schedule, and publish posts across connected channels, manage the queue and ideas, and review post performance.",
+          "version": "1.0.1",
+          "source_blob_sha": "288a56e20207fc70defa443133da5db7ec9e4db1",
+          "source_file_hash": "c83d528d98f26a21c50b034b0e64654dcefb41f38bd7d84b12c39ae14f9803b1",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/buffer/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.business-central",
+      "name": "business-central",
+      "display_name": "Microsoft Dynamics 365 Business Central",
+      "description": "Work with customers, vendors, items, sales and purchase documents, and the general ledger in Business Central.",
+      "source_path": "third_party/business-central",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/business-central",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/business-central/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "business-central",
+          "display_name": "Microsoft Dynamics 365 Business Central",
+          "description": "Work with customers, vendors, items, sales and purchase documents, and the general ledger in Business Central.",
+          "version": "1.0.0",
+          "source_blob_sha": "ac24b4d665f76d8fa131e772aaba7574160c6bea",
+          "source_file_hash": "66eed34abe4627ed3f6cbca0c994418d685055d1d2cb36e887f770338ec2ec0c",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/business-central/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.calendly",
+      "name": "calendly",
+      "display_name": "Calendly",
+      "description": "Check availability and book, cancel, or reschedule.",
+      "source_path": "third_party/calendly",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/calendly",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/calendly/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "calendly",
+          "display_name": "Calendly",
+          "description": "Check availability and book, cancel, or reschedule.",
+          "version": "1.0.0",
+          "source_blob_sha": "7b753bbe717777db1a2fc81529ac204849d01a78",
+          "source_file_hash": "e67811846a287139abe72340dfb46fa800ced9e4e1cacd4e42986c4cdf30f9cf",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/calendly/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.circleback",
+      "name": "circleback",
+      "display_name": "Circleback",
+      "description": "Search meetings, transcripts, action items, and emails.",
+      "source_path": "third_party/circleback",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/circleback",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/circleback/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "circleback",
+          "display_name": "Circleback",
+          "description": "Search meetings, transcripts, action items, and emails.",
+          "version": "1.0.0",
+          "source_blob_sha": "6badc4645ad9ca82d41b3d09e03e56a5f0199de6",
+          "source_file_hash": "f9f6057ee0e5414d419e0fbc2454d03917ba23612d342df13435833d77353962",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/circleback/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.clay",
+      "name": "clay",
+      "display_name": "Clay",
+      "description": "Enrich people and companies, run AI research agents.",
+      "source_path": "third_party/clay",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/clay",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/clay/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "clay",
+          "display_name": "Clay",
+          "description": "Enrich people and companies, run AI research agents.",
+          "version": "1.0.0",
+          "source_blob_sha": "b49dd37a61340f269d3fc1857a85c9fe166cec5a",
+          "source_file_hash": "d24f5f7fbf9a270d9f59ca7c9ded277ee04948798bd1593b2e01a75ba39b5bc8",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/clay/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.coda",
+      "name": "coda",
+      "display_name": "Coda",
+      "description": "Search docs, read pages, and update tables.",
+      "source_path": "third_party/coda",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/coda",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/coda/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "coda",
+          "display_name": "Coda",
+          "description": "Search docs, read pages, and update tables.",
+          "version": "1.0.0",
+          "source_blob_sha": "ad187263325abcbb35aff765e3b5781f91192c1b",
+          "source_file_hash": "887fe99c1a6eca845e1401f84ddf34fb15e3d0716f1a42146a0782ebc37871e4",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/coda/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.coinbase",
+      "name": "coinbase",
+      "display_name": "Coinbase",
+      "description": "Check balances, get quotes, and preview or place trades.",
+      "source_path": "third_party/coinbase",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/coinbase",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/coinbase/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "coinbase",
+          "display_name": "Coinbase",
+          "description": "Check balances, get quotes, and preview or place trades.",
+          "version": "1.0.0",
+          "source_blob_sha": "6082c64ee783aea61627ed6117b96f8807a15700",
+          "source_file_hash": "3463714059871acd8d75a2396f757d4e3a820aeb9cb226c392065e2f4ae060e9",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/coinbase/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.craft",
+      "name": "craft",
+      "display_name": "Craft",
+      "description": "Search, create, and update documents and daily notes.",
+      "source_path": "third_party/craft",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/craft",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/craft/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "craft",
+          "display_name": "Craft",
+          "description": "Search, create, and update documents and daily notes.",
+          "version": "1.0.0",
+          "source_blob_sha": "5ddda5b2dd77fba205bb6f54ca65edbc45906b9d",
+          "source_file_hash": "19b0a8e2dfac97237137d6d0818d15e55de698e1c2f0ce89a8af9f3dc0423f02",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/craft/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.customer-io",
+      "name": "customer-io",
+      "display_name": "Customer.io",
+      "description": "Build campaigns, manage segments, and query people.",
+      "source_path": "third_party/customer-io",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/customer-io",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/customer-io/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "customer-io",
+          "display_name": "Customer.io",
+          "description": "Build campaigns, manage segments, and query people.",
+          "version": "1.0.0",
+          "source_blob_sha": "bb2bb0935cba44b5a164d740593331cdfd28dc75",
+          "source_file_hash": "5cb02d5553e28920980190504fb1df8fa8f59fd47ac3534a8ced72111ddb9e68",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/customer-io/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.daloopa",
+      "name": "daloopa",
+      "display_name": "Daloopa",
+      "description": "Pull source-linked fundamentals, KPIs, filings, and prices.",
+      "source_path": "third_party/daloopa",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/daloopa",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/daloopa/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "daloopa",
+          "display_name": "Daloopa",
+          "description": "Pull source-linked fundamentals, KPIs, filings, and prices.",
+          "version": "1.0.0",
+          "source_blob_sha": "f19e040fda09693854ed30714433d7614b1bebf9",
+          "source_file_hash": "da453a04009976a8ca187d41eabfaf34c686414c712f0e0ec25cd305d5cbc2c0",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/daloopa/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.databricks-genie",
+      "name": "databricks-genie",
+      "display_name": "Databricks Genie",
+      "description": "Ask Databricks Genie questions about your workspace's data in plain language.",
+      "source_path": "third_party/databricks-genie",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/databricks-genie",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/databricks-genie/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "databricks-genie",
+          "display_name": "Databricks Genie",
+          "description": "Ask Databricks Genie questions about your workspace's data in plain language.",
+          "version": "1.1.0",
+          "source_blob_sha": "c458d896139c58127a9a8ed48c528cf1c89fd7d0",
+          "source_file_hash": "3fb3523bc1e3ddf90a3e62dff96f290c6381412587a9ff3dd22002c935f32497",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/databricks-genie/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.docusign",
+      "name": "docusign",
+      "display_name": "Docusign",
+      "description": "Manage envelopes, templates, workflows, and agreements.",
+      "source_path": "third_party/docusign",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/docusign",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/docusign/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "docusign",
+          "display_name": "Docusign",
+          "description": "Manage envelopes, templates, workflows, and agreements.",
+          "version": "1.0.0",
+          "source_blob_sha": "9a9a51a0262bcca52745dd87dc4aeccf68a9a361",
+          "source_file_hash": "dbdc32e1537d68ea711b21a941b7953030c850a6ba88f66aa067e21c3e712ea4",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/docusign/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.eight-sleep",
+      "name": "eight-sleep",
+      "display_name": "Eight Sleep",
+      "description": "Connect your Eight Sleep account to see your sleep scores, stages and heart metrics, check your Pod's status and temperature settings, and manage your alarms and your side of the Pod, with your approval for each change.",
+      "source_path": "third_party/eight-sleep",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/eight-sleep",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/eight-sleep/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "eight-sleep",
+          "display_name": "Eight Sleep",
+          "description": "Connect your Eight Sleep account to see your sleep scores, stages and heart metrics, check your Pod's status and temperature settings, and manage your alarms and your side of the Pod, with your approval for each change.",
+          "version": "1.0.0",
+          "source_blob_sha": "112eb78eb5c7745685cb1666df0b8d7e7a1cd153",
+          "source_file_hash": "c3844b849a6252de110181d3c392d5e2845fb7a3908bc2e0e1686211d3fa020a",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/eight-sleep/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.etoro-trading",
+      "name": "etoro-trading",
+      "display_name": "etoro",
+      "description": "View your eToro portfolio, balances, positions, and watchlists, research instruments and traders, and prepare and place trades.",
+      "source_path": "third_party/etoro-trading",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/etoro-trading",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/etoro-trading/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "etoro-trading",
+          "display_name": "etoro",
+          "description": "View your eToro portfolio, balances, positions, and watchlists, research instruments and traders, and prepare and place trades.",
+          "version": "1.0.3",
+          "source_blob_sha": "7be5154444b543b9788901e034dcd921cc57ca5d",
+          "source_file_hash": "672b7335c3f34d31f22fc004c0cd3d0e85b87bf2e2241b4ae2c29b732620e63e",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/etoro-trading/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.excalidraw",
+      "name": "excalidraw",
+      "display_name": "Excalidraw",
+      "description": "Draw and export hand-drawn diagrams from chat.",
+      "source_path": "third_party/excalidraw",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/excalidraw",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/excalidraw/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "excalidraw",
+          "display_name": "Excalidraw",
+          "description": "Draw and export hand-drawn diagrams from chat.",
+          "version": "1.0.1",
+          "source_blob_sha": "8c61331c9a4e682e8168fae368c5f75948b83d88",
+          "source_file_hash": "98e2e0415c3f7e2fc55bc1530e0980c703433ea51b38961004ee6d7b99a36c12",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/excalidraw/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.fathom",
+      "name": "fathom",
+      "display_name": "Fathom",
+      "description": "Search meetings and pull transcripts and summaries.",
+      "source_path": "third_party/fathom",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/fathom",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/fathom/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "fathom",
+          "display_name": "Fathom",
+          "description": "Search meetings and pull transcripts and summaries.",
+          "version": "1.0.0",
+          "source_blob_sha": "4c9a83678c614ceb826fd9be333f395f2c3e3d49",
+          "source_file_hash": "8b0d9f4d164f04847c0de6c2d950321c955c0aebea8fc2330aca79c7af771c30",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/fathom/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.feishu",
+      "name": "feishu",
+      "display_name": "Feishu",
+      "description": "Search, create, and update Feishu docs, and read Feishu messages and groups.",
+      "source_path": "third_party/feishu",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/feishu",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/feishu/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "feishu",
+          "display_name": "Feishu",
+          "description": "Search, create, and update Feishu docs, and read Feishu messages and groups.",
+          "version": "1.0.0",
+          "source_blob_sha": "5745498aab62070f5949e077493fcecdd43b306e",
+          "source_file_hash": "5861a0ea0c08cfdb90c97cf77c9cdc345163c60f6e43440ec7e458c6cf668f2a",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/feishu/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.finance",
+      "name": "finance",
+      "display_name": "Finance",
+      "description": "Link your bank, card, and investment accounts through Plaid so Grok can answer questions about balances, spending, subscriptions, and investments. You'll share contact details, account and balance info, transactions, credit and loans, and investments. Grok syncs and stores your linked account data so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. Access is read-only, xAI never sees or stores your bank login, and you can unlink accounts anytime from cursor.com.",
+      "source_path": "third_party/finance",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/finance",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/finance/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "finance",
+          "display_name": "Finance",
+          "description": "Link your bank, card, and investment accounts through Plaid so Grok can answer questions about balances, spending, subscriptions, and investments. You'll share contact details, account and balance info, transactions, credit and loans, and investments. Grok syncs and stores your linked account data so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. Access is read-only, xAI never sees or stores your bank login, and you can unlink accounts anytime from cursor.com.",
+          "version": "1.1.2",
+          "source_blob_sha": "df98077430c145b45530cb2e84a2ec243426272d",
+          "source_file_hash": "31139fe53e99c7cedcd99e7532aa67b162d85edb19e8aca1e71bc2e26f8f99bf",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/finance/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.finary",
+      "name": "finary",
+      "display_name": "Finary",
+      "description": "Read your net worth, accounts, holdings, spending, and budgets.",
+      "source_path": "third_party/finary",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/finary",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/finary/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "finary",
+          "display_name": "Finary",
+          "description": "Read your net worth, accounts, holdings, spending, and budgets.",
+          "version": "1.0.0",
+          "source_blob_sha": "2cd33f812522045984b401647dcdb0721328bdec",
+          "source_file_hash": "ea8b9d19af50c39cfdb7f642cf780abfedb794586759f17c6b50b12a23680725",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/finary/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.fireflies",
+      "name": "fireflies",
+      "display_name": "Fireflies",
+      "description": "Search meeting transcripts, summaries, and action items.",
+      "source_path": "third_party/fireflies",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/fireflies",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/fireflies/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "fireflies",
+          "display_name": "Fireflies",
+          "description": "Search meeting transcripts, summaries, and action items.",
+          "version": "1.0.0",
+          "source_blob_sha": "773c74f28118e715cc828791cbf8c3030828d0b8",
+          "source_file_hash": "bfcc7ac4490224dcd7571f09d0c5366277b40cc3060f1c68e4468f4062b95c16",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/fireflies/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.fitmetrics",
+      "name": "fitmetrics",
+      "display_name": "FitMetrics",
+      "description": "Review Trainerize clients and check-ins, and update macros, messages, and programs.",
+      "source_path": "third_party/fitmetrics",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/fitmetrics",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/fitmetrics/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "fitmetrics",
+          "display_name": "FitMetrics",
+          "description": "Review Trainerize clients and check-ins, and update macros, messages, and programs.",
+          "version": "1.0.0",
+          "source_blob_sha": "fa49be676f153a5232d982951a79efae4872734e",
+          "source_file_hash": "87f82fb860c0e39cd62ec549140e4625ddc3c80b2c97bca453b1cb312f433113",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/fitmetrics/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.gamma",
+      "name": "gamma",
+      "display_name": "Gamma",
+      "description": "Generate presentations, documents, and webpages.",
+      "source_path": "third_party/gamma",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/gamma",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/gamma/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "gamma",
+          "display_name": "Gamma",
+          "description": "Generate presentations, documents, and webpages.",
+          "version": "1.0.0",
+          "source_blob_sha": "9f1a0275cc3ec42d91028c5ad403a2b8790c21d7",
+          "source_file_hash": "016ea3bdb8d2c10a14896661eb76c62109eb9ee4abe63269041f01010b9577dd",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/gamma/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.github",
+      "name": "github",
+      "display_name": "GitHub",
+      "description": "Manage repos, issues, pull requests, and Actions.",
+      "source_path": "third_party/github",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/github",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/github/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "github",
+          "display_name": "GitHub",
+          "description": "Manage repos, issues, pull requests, and Actions.",
+          "version": "1.0.0",
+          "source_blob_sha": "caa4158ce3f8cdb321313c9f7e75cd539bcc5a40",
+          "source_file_hash": "9c187360eefc7261c09e4a86ed627503443edc6661b9ee5efb93e252dac49eb4",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/github/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.gmail",
+      "name": "gmail",
+      "display_name": "Gmail",
+      "description": "Search, read, draft, and manage email.",
+      "source_path": "third_party/gmail",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/gmail",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/gmail/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "gmail",
+          "display_name": "Gmail",
+          "description": "Search, read, draft, and manage email.",
+          "version": "1.0.0",
+          "source_blob_sha": "32279d3b7c538d35f3f6f13e76bb422a6cd5347a",
+          "source_file_hash": "3a0ab9ccac80f73d196c3476ac1498801dcf5ff628157a3d40cdc6ec5dbf0dc9",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/gmail/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.godaddy",
+      "name": "godaddy",
+      "display_name": "GoDaddy",
+      "description": "Brainstorm domain names and check availability.",
+      "source_path": "third_party/godaddy",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/godaddy",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/godaddy/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "godaddy",
+          "display_name": "GoDaddy",
+          "description": "Brainstorm domain names and check availability.",
+          "version": "1.0.0",
+          "source_blob_sha": "f7caebe9df3013af30d4043c0ab5bd1f65aae340",
+          "source_file_hash": "52302a177d9767ab355b001f4e976519b82a584ceae172e574c37c25a2a034be",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/godaddy/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.gong",
+      "name": "gong",
+      "display_name": "Gong",
+      "description": "Pull account summaries, deal insights, and call briefs.",
+      "source_path": "third_party/gong",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/gong",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/gong/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "gong",
+          "display_name": "Gong",
+          "description": "Pull account summaries, deal insights, and call briefs.",
+          "version": "1.0.0",
+          "source_blob_sha": "5bc7f7da234bd81104521434e6b692088202331e",
+          "source_file_hash": "d03567859597bba45cc52e9b05acfbc0daad162efd2554f4e1d11353b19e5b08",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/gong/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.google-ads",
+      "name": "google-ads",
+      "display_name": "Google Ads",
+      "description": "Report on campaigns, research keywords, and make previewed changes.",
+      "source_path": "third_party/google-ads",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-ads",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/google-ads/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "google-ads",
+          "display_name": "Google Ads",
+          "description": "Report on campaigns, research keywords, and make previewed changes.",
+          "version": "1.0.0",
+          "source_blob_sha": "baf0f41573460632cbbadb28a18ac0c61d781853",
+          "source_file_hash": "c70e6d031b5a533578e32b0a0c181a743b327fc16ca3acd17f6d0003cc9d7d97",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-ads/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.google-analytics",
+      "name": "google-analytics",
+      "display_name": "Google Analytics",
+      "description": "Run GA4 reports and manage property configuration.",
+      "source_path": "third_party/google-analytics",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-analytics",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/google-analytics/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "google-analytics",
+          "display_name": "Google Analytics",
+          "description": "Run GA4 reports and manage property configuration.",
+          "version": "1.0.0",
+          "source_blob_sha": "012edce15e592ee8cfbb759974a1e39e58ed26dd",
+          "source_file_hash": "0bd89a0567375e13b050bd98cfa607b30feb23e5d149b98100b94b50ea4a401a",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-analytics/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.google-calendar",
+      "name": "google-calendar",
+      "display_name": "Google Calendar",
+      "description": "Search events and schedule meetings.",
+      "source_path": "third_party/google-calendar",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-calendar",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/google-calendar/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "google-calendar",
+          "display_name": "Google Calendar",
+          "description": "Search events and schedule meetings.",
+          "version": "1.0.0",
+          "source_blob_sha": "67fca28becfb07eb3c72dca047dbbfef03bbc3b1",
+          "source_file_hash": "cb5ba32cc1154bf94a7650373e58d98d59748ee973f94fc7decc856f1b8a8f62",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-calendar/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.google-cloud-bigquery",
+      "name": "google-cloud-bigquery",
+      "display_name": "Google Cloud BigQuery",
+      "description": "Explore datasets and tables and run SQL queries.",
+      "source_path": "third_party/google-cloud-bigquery",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-cloud-bigquery",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/google-cloud-bigquery/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "google-cloud-bigquery",
+          "display_name": "Google Cloud BigQuery",
+          "description": "Explore datasets and tables and run SQL queries.",
+          "version": "1.1.0",
+          "source_blob_sha": "afae3a1b65f535d548eb78376bf92d030a3d3117",
+          "source_file_hash": "beb4d58ebe5d2218db46cf48a8fdb4a4eaa21fe2ee0b73e2d736f6a3288f3c80",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-cloud-bigquery/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.google-docs",
+      "name": "google-docs",
+      "display_name": "Google Docs",
+      "description": "Read, create, and edit documents.",
+      "source_path": "third_party/google-docs",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-docs",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/google-docs/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "google-docs",
+          "display_name": "Google Docs",
+          "description": "Read, create, and edit documents.",
+          "version": "1.1.0",
+          "source_blob_sha": "dbe8280a4d6df21863247f15e973d676fe4ad98f",
+          "source_file_hash": "c0c9ead629f2dec34b351dd110909045730d87166f62a92d004aadb00381ccd7",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-docs/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.google-drive",
+      "name": "google-drive",
+      "display_name": "Google Drive",
+      "description": "Search, read, create, and share files.",
+      "source_path": "third_party/google-drive",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-drive",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/google-drive/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "google-drive",
+          "display_name": "Google Drive",
+          "description": "Search, read, create, and share files.",
+          "version": "1.0.1",
+          "source_blob_sha": "a26d1c8dbe1cdec46dd00fa5e3a657a831d84c3f",
+          "source_file_hash": "850b04a7f5914e0efcd0eaab70d140787b40acfcc0c3a243cbd21178feeade3b",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-drive/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.google-sheets",
+      "name": "google-sheets",
+      "display_name": "Google Sheets",
+      "description": "Read, write, and append spreadsheet data.",
+      "source_path": "third_party/google-sheets",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-sheets",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/google-sheets/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "google-sheets",
+          "display_name": "Google Sheets",
+          "description": "Read, write, and append spreadsheet data.",
+          "version": "1.1.0",
+          "source_blob_sha": "ebee059c91e2b32b7674028bd8216ba28f96da23",
+          "source_file_hash": "1658c0153d856fe706ad41c9a375a9e6a201d0f6dff886abacd35ff5dc0f5b85",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-sheets/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.google-slides",
+      "name": "google-slides",
+      "display_name": "Google Slides",
+      "description": "Create, edit, and render presentations.",
+      "source_path": "third_party/google-slides",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-slides",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/google-slides/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "google-slides",
+          "display_name": "Google Slides",
+          "description": "Create, edit, and render presentations.",
+          "version": "1.1.0",
+          "source_blob_sha": "b8c66328b7140aacda2f2a032048c88f8c97915b",
+          "source_file_hash": "39426678132ca0b789779ad09610f692bba26f7402e008f5c3c14d6481b1bbd0",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/google-slides/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.gopuff",
+      "name": "gopuff",
+      "display_name": "Gopuff",
+      "description": "Groceries, snacks, drinks, fresh food and household essentials delivered in as fast as 15 minutes, with many Gopuff locations open 24/7. Ask Grok for a weekly restock, tonight's dinner, a party run, a late-night craving or your usual: it shops your nearest Gopuff at app prices with no markups or service fees, builds your cart, shows you the total, places the order when you say yes and tracks it to your door.",
+      "source_path": "third_party/gopuff",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/gopuff",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/gopuff/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "gopuff",
+          "display_name": "Gopuff",
+          "description": "Groceries, snacks, drinks, fresh food and household essentials delivered in as fast as 15 minutes, with many Gopuff locations open 24/7. Ask Grok for a weekly restock, tonight's dinner, a party run, a late-night craving or your usual: it shops your nearest Gopuff at app prices with no markups or service fees, builds your cart, shows you the total, places the order when you say yes and tracks it to your door.",
+          "version": "1.0.0",
+          "source_blob_sha": "4c135d6be99bd519d03ab26cfb6694032f7b481a",
+          "source_file_hash": "bedce7bf355914d9ad0d2d06782b468c8166b5af3fc4207ad62c1ee27532e8d1",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/gopuff/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.greenhouse",
+      "name": "greenhouse",
+      "display_name": "Greenhouse",
+      "description": "Search candidates, jobs, and applications, and review scorecards in Greenhouse Recruiting.",
+      "source_path": "third_party/greenhouse",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/greenhouse",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/greenhouse/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "greenhouse",
+          "display_name": "Greenhouse",
+          "description": "Search candidates, jobs, and applications, and review scorecards in Greenhouse Recruiting.",
+          "version": "1.0.0",
+          "source_blob_sha": "f3271b7eaffd69541f49796377dba3de4583be92",
+          "source_file_hash": "5228f3312193392588520f60b2de14cff699e15a6b9696ec5520bb44e99602a8",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/greenhouse/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.guru",
+      "name": "guru",
+      "display_name": "Guru",
+      "description": "Search company knowledge and draft verified answers.",
+      "source_path": "third_party/guru",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/guru",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/guru/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "guru",
+          "display_name": "Guru",
+          "description": "Search company knowledge and draft verified answers.",
+          "version": "1.0.0",
+          "source_blob_sha": "5c3b10c33bcc11461baeac6bfccd150322e0ddd7",
+          "source_file_hash": "8c200601560fdbb997d8f35d3d9e68b0661c887d06b2598e02f56d792aa3b151",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/guru/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.gusto",
+      "name": "gusto",
+      "display_name": "Gusto",
+      "description": "Work with payroll, employees, contractors, time off, and reports.",
+      "source_path": "third_party/gusto",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/gusto",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/gusto/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "gusto",
+          "display_name": "Gusto",
+          "description": "Work with payroll, employees, contractors, time off, and reports.",
+          "version": "1.0.0",
+          "source_blob_sha": "28e014a8d5a3e7639413e868f0aba0890147bd91",
+          "source_file_hash": "a0299522bc983347b5299819924d9ea64163422c1759631324fd4191bc2dcc3b",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/gusto/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.highlevel",
+      "name": "highlevel",
+      "display_name": "HighLevel",
+      "description": "Work with contacts, conversations, opportunities, calendars, and payments.",
+      "source_path": "third_party/highlevel",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/highlevel",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/highlevel/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "highlevel",
+          "display_name": "HighLevel",
+          "description": "Work with contacts, conversations, opportunities, calendars, and payments.",
+          "version": "1.1.0",
+          "source_blob_sha": "92f633875ace77e1610b5b5e94d04e8572ae2a98",
+          "source_file_hash": "a5f5472438146f5cd5dd1fc0ce0a155f8d13c4ad6eba3c95c801ae6856446039",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/highlevel/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.hubspot",
+      "name": "hubspot",
+      "display_name": "HubSpot",
+      "description": "Search and update contacts, companies, deals, and tickets.",
+      "source_path": "third_party/hubspot",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/hubspot",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/hubspot/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "hubspot",
+          "display_name": "HubSpot",
+          "description": "Search and update contacts, companies, deals, and tickets.",
+          "version": "1.0.1",
+          "source_blob_sha": "714368255d235a730d87ca68773b15b4979dca8a",
+          "source_file_hash": "f9b4f19c79227ae588bc08d8feeda1eaf3949bc59bb1c68db15a05e3a0476105",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/hubspot/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.hunter",
+      "name": "hunter",
+      "display_name": "Hunter",
+      "description": "Find and verify emails, discover companies, and save leads.",
+      "source_path": "third_party/hunter",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/hunter",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/hunter/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "hunter",
+          "display_name": "Hunter",
+          "description": "Find and verify emails, discover companies, and save leads.",
+          "version": "1.0.0",
+          "source_blob_sha": "dfaa1beea5d74e126c33e0665a75a5b4c73b791b",
+          "source_file_hash": "085f981bfceeed991c5efe7ae4f259678f1d854a97279c0f739c109ee2729105",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/hunter/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.interactive-brokers",
+      "name": "interactive-brokers",
+      "display_name": "Interactive Brokers",
+      "description": "Review positions, balances, P&L, and draft trade instructions.",
+      "source_path": "third_party/interactive-brokers",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/interactive-brokers",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/interactive-brokers/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "interactive-brokers",
+          "display_name": "Interactive Brokers",
+          "description": "Review positions, balances, P&L, and draft trade instructions.",
+          "version": "1.0.0",
+          "source_blob_sha": "1b068d64f338f35a971d9af85e5a239201a067d5",
+          "source_file_hash": "a422c35befda2e6ab06159c74b5acd1bd65026473ceb3407c4b357103dd120c3",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/interactive-brokers/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.intercom",
+      "name": "intercom",
+      "display_name": "Intercom",
+      "description": "Search conversations, contacts, and Help Center articles.",
+      "source_path": "third_party/intercom",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/intercom",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/intercom/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "intercom",
+          "display_name": "Intercom",
+          "description": "Search conversations, contacts, and Help Center articles.",
+          "version": "1.0.0",
+          "source_blob_sha": "b2c136903178fdb129337232ac0a78dd3fc5aa5f",
+          "source_file_hash": "d11484303b0236d91b7890239f58b4a095f233e2e9d5bbbc6c34cc0cb324d929",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/intercom/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.jotform",
+      "name": "jotform",
+      "display_name": "Jotform",
+      "description": "Create and edit forms, then read submissions.",
+      "source_path": "third_party/jotform",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/jotform",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/jotform/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "jotform",
+          "display_name": "Jotform",
+          "description": "Create and edit forms, then read submissions.",
+          "version": "1.0.0",
+          "source_blob_sha": "ff0187e2e2b02558f3f637999248c6c9e908838e",
+          "source_file_hash": "33132f25bbcdb5acbefe52f64627312765021bc036292087a80205f573c28cfe",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/jotform/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.juicebox",
+      "name": "juicebox",
+      "display_name": "Juicebox",
+      "description": "Query recruiting analytics, shortlists, and sourcing agents.",
+      "source_path": "third_party/juicebox",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/juicebox",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/juicebox/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "juicebox",
+          "display_name": "Juicebox",
+          "description": "Query recruiting analytics, shortlists, and sourcing agents.",
+          "version": "1.0.0",
+          "source_blob_sha": "e5a175154fe2eadad5f4bd3906d8290ac6a7ee08",
+          "source_file_hash": "19e626b86f186da3cc71b0eced53e2757eb8eed9cf1de381ddbff7f9ff3c7655",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/juicebox/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.klaviyo",
+      "name": "klaviyo",
+      "display_name": "Klaviyo",
+      "description": "Manage profiles, segments, campaigns, and flows.",
+      "source_path": "third_party/klaviyo",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/klaviyo",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/klaviyo/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "klaviyo",
+          "display_name": "Klaviyo",
+          "description": "Manage profiles, segments, campaigns, and flows.",
+          "version": "1.0.0",
+          "source_blob_sha": "af4a92c4ce3727506d14ac4c46c80bbd2b4af6be",
+          "source_file_hash": "c0b9d9a4f421321cd9d844ba8a0786614245e9a491eac5d898a372df0cf94913",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/klaviyo/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.lark",
+      "name": "lark",
+      "display_name": "Lark",
+      "description": "Search, create, and update Lark Suite docs, and read Lark messages and groups.",
+      "source_path": "third_party/lark",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/lark",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/lark/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "lark",
+          "display_name": "Lark",
+          "description": "Search, create, and update Lark Suite docs, and read Lark messages and groups.",
+          "version": "1.0.0",
+          "source_blob_sha": "4b583c299022e0bf23963b1337765107a2665efe",
+          "source_file_hash": "3f09961311f6c1682cab26db0632ba228e3ebb6b779b7efde83a39982e5bfe16",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/lark/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.lark-base",
+      "name": "lark-base",
+      "display_name": "Lark Base",
+      "description": "Read and update tables, fields, views, and records in Lark Base.",
+      "source_path": "third_party/lark-base",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/lark-base",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/lark-base/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "lark-base",
+          "display_name": "Lark Base",
+          "description": "Read and update tables, fields, views, and records in Lark Base.",
+          "version": "1.0.0",
+          "source_blob_sha": "f43cba77f17cbcd4d56b5443a39b423720065ce1",
+          "source_file_hash": "a2cbf35af030f82b32c5bce9881b23bc557e50537cfb655b26afaf44a328fac5",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/lark-base/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.mailerlite",
+      "name": "mailerlite",
+      "display_name": "MailerLite",
+      "description": "Manage subscribers, groups, campaigns, and automations.",
+      "source_path": "third_party/mailerlite",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/mailerlite",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/mailerlite/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "mailerlite",
+          "display_name": "MailerLite",
+          "description": "Manage subscribers, groups, campaigns, and automations.",
+          "version": "1.0.0",
+          "source_blob_sha": "e3f51a3fd3b71e32f4fb833cef98c820a8acbe0d",
+          "source_file_hash": "b47a67562cf663f403230e366b899562a38b40951c61146df7df4e4e7c0f97f4",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/mailerlite/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.meltwater",
+      "name": "meltwater",
+      "display_name": "Meltwater",
+      "description": "Search media and social mentions and pull analytics.",
+      "source_path": "third_party/meltwater",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/meltwater",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/meltwater/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "meltwater",
+          "display_name": "Meltwater",
+          "description": "Search media and social mentions and pull analytics.",
+          "version": "1.0.0",
+          "source_blob_sha": "4a926181e75508d3091e030e2d8563868c918a3c",
+          "source_file_hash": "e1d52a76ff5600c3eb81517eb00e1b7b07746b97b8a7f325ec982157b6b87d22",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/meltwater/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.mem",
+      "name": "mem",
+      "display_name": "Mem",
+      "description": "Capture, search, and organize notes and collections.",
+      "source_path": "third_party/mem",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/mem",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/mem/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "mem",
+          "display_name": "Mem",
+          "description": "Capture, search, and organize notes and collections.",
+          "version": "1.0.0",
+          "source_blob_sha": "c078aa5b9045b8a8a0b483e71a3823b58b3870d5",
+          "source_file_hash": "d76b4bbbb34d63a8944cbd68cafeeee56364d58cd6daa4b1b05311bd7ee56c11",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/mem/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.meta-ads",
+      "name": "meta-ads",
+      "display_name": "Meta Ads",
+      "description": "Manage campaigns, ads, audiences, and catalogs, and pull performance insights.",
+      "source_path": "third_party/meta-ads",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/meta-ads",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/meta-ads/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "meta-ads",
+          "display_name": "Meta Ads",
+          "description": "Manage campaigns, ads, audiences, and catalogs, and pull performance insights.",
+          "version": "1.0.0",
+          "source_blob_sha": "49bb44d133947c3715f1712b2d3b5de4490fd404",
+          "source_file_hash": "2b3a2f777e9c413cb03205e9503b62ba091e89ec4d2c409103af41cb11ed6fc9",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/meta-ads/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.metricool",
+      "name": "metricool",
+      "display_name": "Metricool",
+      "description": "Plan and publish social posts, pull metrics and reports, and manage inbox, reviews, and ads across your Metricool brands.",
+      "source_path": "third_party/metricool",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/metricool",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/metricool/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "metricool",
+          "display_name": "Metricool",
+          "description": "Plan and publish social posts, pull metrics and reports, and manage inbox, reviews, and ads across your Metricool brands.",
+          "version": "1.0.0",
+          "source_blob_sha": "f683b14b98f7c2f739a0360e4985399950192e4f",
+          "source_file_hash": "8dad064201fb9688c8db43b6faf5ab8ca8a285b2c6bcc5db0bc31b83456c7c70",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/metricool/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.mixpanel",
+      "name": "mixpanel",
+      "display_name": "Mixpanel",
+      "description": "Query events, funnels, flows, and retention in Mixpanel, and manage dashboards, cohorts, experiments, and feature flags.",
+      "source_path": "third_party/mixpanel",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/mixpanel",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/mixpanel/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "mixpanel",
+          "display_name": "Mixpanel",
+          "description": "Query events, funnels, flows, and retention in Mixpanel, and manage dashboards, cohorts, experiments, and feature flags.",
+          "version": "1.0.0",
+          "source_blob_sha": "b5136dace07b1fa99e1771c808acb2abfe7e7a26",
+          "source_file_hash": "50f7b0f821f5a09abf06adac82b89e9e4dde73dfa3385d50743e6abccb14decc",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/mixpanel/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.navan",
+      "name": "navan",
+      "display_name": "Navan",
+      "description": "Query expenses, travel bookings, policies, and cards.",
+      "source_path": "third_party/navan",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/navan",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/navan/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "navan",
+          "display_name": "Navan",
+          "description": "Query expenses, travel bookings, policies, and cards.",
+          "version": "1.0.0",
+          "source_blob_sha": "d1f6b6a3e1a903a62ec3da2f72e2bd31a757218f",
+          "source_file_hash": "6db4dd0a11632ab155228ba9f4779d5efc1b72a46b22272d7a659426eed79dd4",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/navan/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.onedrive",
+      "name": "onedrive",
+      "display_name": "OneDrive",
+      "description": "Browse, search, and read Microsoft OneDrive files.",
+      "source_path": "third_party/onedrive",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/onedrive",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/onedrive/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "onedrive",
+          "display_name": "OneDrive",
+          "description": "Browse, search, and read Microsoft OneDrive files.",
+          "version": "1.0.0",
+          "source_blob_sha": "81d97277319a6df42c0b34db90fd684057348c5b",
+          "source_file_hash": "24fa031823ee9963c995db4708689284a5b29b21396ce504b71c1f81e31f6ed6",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/onedrive/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.onepay",
+      "name": "onepay",
+      "display_name": "OnePay",
+      "description": "Connect Grok to OnePay to better understand your finances. View balances across Banking, Credit Card, Pay Later, Invest, Crypto and OnePay @ Work. Drill into transactions by date, merchant, or category to understand your spending. Monitor your investment portfolio and crypto holdings alongside your cash. You sign in with OnePay and approve the access Grok requests; xAI never sees or stores your OnePay credentials, and you can disconnect anytime from grok.com.",
+      "source_path": "third_party/onepay",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/onepay",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/onepay/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "onepay",
+          "display_name": "OnePay",
+          "description": "Connect Grok to OnePay to better understand your finances. View balances across Banking, Credit Card, Pay Later, Invest, Crypto and OnePay @ Work. Drill into transactions by date, merchant, or category to understand your spending. Monitor your investment portfolio and crypto holdings alongside your cash. You sign in with OnePay and approve the access Grok requests; xAI never sees or stores your OnePay credentials, and you can disconnect anytime from grok.com.",
+          "version": "1.0.0",
+          "source_blob_sha": "ef49bd114480898c98a3d702030555d5a0665be7",
+          "source_file_hash": "84ab689ddd306e0f9fff941937087686ba0d01305805d320fdac580448d06b9c",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/onepay/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.otter",
+      "name": "otter",
+      "display_name": "Otter.ai",
+      "description": "Search meeting history and pull full transcripts.",
+      "source_path": "third_party/otter",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/otter",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/otter/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "otter",
+          "display_name": "Otter.ai",
+          "description": "Search meeting history and pull full transcripts.",
+          "version": "1.0.0",
+          "source_blob_sha": "3aea8ce04cd2a4ff544824f878b1453eb72f6670",
+          "source_file_hash": "579b6f150f7de281d716f5426f3ec31b01fe59a22b100d22fa5d682ab41561e8",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/otter/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.outlook",
+      "name": "outlook",
+      "display_name": "Outlook",
+      "description": "Search, read, and send Microsoft Outlook email, and look up contacts.",
+      "source_path": "third_party/outlook",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/outlook",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/outlook/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "outlook",
+          "display_name": "Outlook",
+          "description": "Search, read, and send Microsoft Outlook email, and look up contacts.",
+          "version": "1.0.0",
+          "source_blob_sha": "debe925829b06d0a88df04e311f0c50c5bc31990",
+          "source_file_hash": "5bd47dc961b0ec1f008ed565298f5c778ce191ed09d976f59792bda45e2dcddd",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/outlook/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.outlook-calendar",
+      "name": "outlook-calendar",
+      "display_name": "Outlook Calendar",
+      "description": "List, create, update, and cancel Microsoft Outlook calendar events.",
+      "source_path": "third_party/outlook-calendar",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/outlook-calendar",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/outlook-calendar/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "outlook-calendar",
+          "display_name": "Outlook Calendar",
+          "description": "List, create, update, and cancel Microsoft Outlook calendar events.",
+          "version": "1.0.0",
+          "source_blob_sha": "b19c3ed8bb350c2c2be4ce793c7d6dc26e6dd292",
+          "source_file_hash": "0d99dda21bc648c8e8e8feb2ef8e1827357031716ec9000c5cd3b4de3edf8a08",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/outlook-calendar/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.outreach",
+      "name": "outreach",
+      "display_name": "Outreach",
+      "description": "Search sequences, prospects, and Kaia meetings.",
+      "source_path": "third_party/outreach",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/outreach",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/outreach/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "outreach",
+          "display_name": "Outreach",
+          "description": "Search sequences, prospects, and Kaia meetings.",
+          "version": "1.0.0",
+          "source_blob_sha": "7b67e2f15256ae94b754092b324d6cf0bdd49d34",
+          "source_file_hash": "e50a8b16386792866355b364855c3cf87eadce4af601278bb72729e12d706582",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/outreach/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.pitchbook",
+      "name": "pitchbook",
+      "display_name": "PitchBook",
+      "description": "Research private companies, deals, investors, and funds.",
+      "source_path": "third_party/pitchbook",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/pitchbook",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/pitchbook/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "pitchbook",
+          "display_name": "PitchBook",
+          "description": "Research private companies, deals, investors, and funds.",
+          "version": "1.0.0",
+          "source_blob_sha": "a935a2eab50fd7c5ec0018bac73c9cd1e063e28f",
+          "source_file_hash": "593df771b241149754f188dd215bdce8ee2023af707efe3d6dc5bc80d2f7a972",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/pitchbook/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.plaud",
+      "name": "plaud",
+      "display_name": "Plaud",
+      "description": "Work with your Plaud recordings: list and search meetings and voice notes, read full transcripts with speaker labels, and pull AI summaries, action items, and key topics into your workflow.",
+      "source_path": "third_party/plaud",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/plaud",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/plaud/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "plaud",
+          "display_name": "Plaud",
+          "description": "Work with your Plaud recordings: list and search meetings and voice notes, read full transcripts with speaker labels, and pull AI summaries, action items, and key topics into your workflow.",
+          "version": "1.0.1",
+          "source_blob_sha": "a49d6675964b35292088067703a0086e2f855aa7",
+          "source_file_hash": "ea7eb1aef3a6b87815875ea0b1ca8f0f7e1ac9a4a80d4ffc8b84cead5584323b",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/plaud/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.playwright",
+      "name": "playwright",
+      "display_name": "Playwright",
+      "description": "Navigate, click, screenshot, and test in a real browser.",
+      "source_path": "third_party/playwright",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/playwright",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/playwright/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "playwright",
+          "display_name": "Playwright",
+          "description": "Navigate, click, screenshot, and test in a real browser.",
+          "version": "1.0.0",
+          "source_blob_sha": "7bb37681aec80aeec8508bc8c228a8e6fcf4781a",
+          "source_file_hash": "b350a8817217d93b65ca624b6b5a4c06f12c18c77ea5c6fa59f7eb3e2c171b0b",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/playwright/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.posthog-mcp",
+      "name": "posthog-mcp",
+      "display_name": "PostHog MCP",
+      "description": "Work with PostHog from chat: query product analytics and run SQL, manage feature flags and experiments, triage error tracking issues, and review session replays, surveys, and dashboards (URL-only connector to PostHog's hosted MCP server).",
+      "source_path": "third_party/posthog-mcp",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/posthog-mcp",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/posthog-mcp/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "posthog-mcp",
+          "display_name": "PostHog MCP",
+          "description": "Work with PostHog from chat: query product analytics and run SQL, manage feature flags and experiments, triage error tracking issues, and review session replays, surveys, and dashboards (URL-only connector to PostHog's hosted MCP server).",
+          "version": "1.0.1",
+          "source_blob_sha": "25448d85e2ad0c31b07b6b30457b88fcc582358b",
+          "source_file_hash": "c63a0583376b7e9b199caaae9fbc328b656a733dee815e6163cb32741ac36539",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/posthog-mcp/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.power-bi",
+      "name": "power-bi",
+      "display_name": "Power BI",
+      "description": "Browse Microsoft Power BI workspaces and render report pages.",
+      "source_path": "third_party/power-bi",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/power-bi",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/power-bi/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "power-bi",
+          "display_name": "Power BI",
+          "description": "Browse Microsoft Power BI workspaces and render report pages.",
+          "version": "1.0.0",
+          "source_blob_sha": "f4a31a666bad09f42aee5f0ca6f40b84d5d01209",
+          "source_file_hash": "f534bf129c312ad8863171698a84cbe123f01027b00f6a2c42eae55f63a7aba7",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/power-bi/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.profound",
+      "name": "profound",
+      "display_name": "Profound",
+      "description": "Track AI visibility, sentiment, and citations.",
+      "source_path": "third_party/profound",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/profound",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/profound/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "profound",
+          "display_name": "Profound",
+          "description": "Track AI visibility, sentiment, and citations.",
+          "version": "1.0.0",
+          "source_blob_sha": "a8474a98634490e1b8fe171248e529d8c1f9432b",
+          "source_file_hash": "8a3f69429a2f8299b95cc5c2dcf55a781ced49831dda9486fb4de641cd7bee70",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/profound/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.questrade",
+      "name": "questrade",
+      "display_name": "Questrade",
+      "description": "Read your Questrade portfolio, get live market data, and discuss potential trades.",
+      "source_path": "third_party/questrade",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/questrade",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/questrade/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "questrade",
+          "display_name": "Questrade",
+          "description": "Read your Questrade portfolio, get live market data, and discuss potential trades.",
+          "version": "1.0.0",
+          "source_blob_sha": "011954fa7a68f5863251cbf2baf0f509c6e06a58",
+          "source_file_hash": "a3e1dded36513190528a4a5c73085ceacda7211f557b0fa7b6ff6145918107e3",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/questrade/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.quickbooks-online",
+      "name": "quickbooks-online",
+      "display_name": "QuickBooks Online",
+      "description": "QuickBooks turns your business's financial data into clear, decision-ready insights, and now takes action on it too. Analyze profitability, cash flow, and balance sheet health, and benchmark your performance against similar businesses in your industry and region. See who owes you money and which bills are coming due with A/R and A/P aging, and break down sales by customer or product to find what is driving revenue. Create, update, send, duplicate, and schedule invoices and estimates. Add customers and products, generate, and send payment links and reminders, always with a clear preview and your confirmation before anything is sent. Get fast read-only answers on payroll and QuickBooks Capital. Look up payroll details, and when you need to, add an employee or set base pay. Check your QuickBooks Capital loans and peer lending benchmarks.",
+      "source_path": "third_party/quickbooks-online",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/quickbooks-online",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/quickbooks-online/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "quickbooks-online",
+          "display_name": "QuickBooks Online",
+          "description": "QuickBooks turns your business's financial data into clear, decision-ready insights, and now takes action on it too. Analyze profitability, cash flow, and balance sheet health, and benchmark your performance against similar businesses in your industry and region. See who owes you money and which bills are coming due with A/R and A/P aging, and break down sales by customer or product to find what is driving revenue. Create, update, send, duplicate, and schedule invoices and estimates. Add customers and products, generate, and send payment links and reminders, always with a clear preview and your confirmation before anything is sent. Get fast read-only answers on payroll and QuickBooks Capital. Look up payroll details, and when you need to, add an employee or set base pay. Check your QuickBooks Capital loans and peer lending benchmarks.",
+          "version": "1.1.1",
+          "source_blob_sha": "d570c08763f63ba11f0a40d1aedf2c43e64d4683",
+          "source_file_hash": "3cdfe366b39c0b2d9a4ce93b07cceeb08c32140990241a7aaeb756e9b46fb79c",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/quickbooks-online/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.readwise",
+      "name": "readwise",
+      "display_name": "Readwise",
+      "description": "Search highlights and Reader documents, save articles.",
+      "source_path": "third_party/readwise",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/readwise",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/readwise/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "readwise",
+          "display_name": "Readwise",
+          "description": "Search highlights and Reader documents, save articles.",
+          "version": "1.0.0",
+          "source_blob_sha": "1f2bea879e398912027505b02ad70cc4953c1af6",
+          "source_file_hash": "211f97536dc7426b0bf52b48cfe31a2f271a9a339bfd8121fd4cb901429932c1",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/readwise/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.ringcentral-chat",
+      "name": "ringcentral-chat",
+      "display_name": "RingCentral Chat",
+      "description": "Read team chats and posts, send messages, and manage teams, tasks, and notes.",
+      "source_path": "third_party/ringcentral-chat",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/ringcentral-chat",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/ringcentral-chat/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "ringcentral-chat",
+          "display_name": "RingCentral Chat",
+          "description": "Read team chats and posts, send messages, and manage teams, tasks, and notes.",
+          "version": "1.0.0",
+          "source_blob_sha": "66af09ddadee1dd3d3ea7321109b9d86e3f47a85",
+          "source_file_hash": "826b1448a5f39514a7d7af6e3bfc55a393cc07e1cf5f3f3220fa4a152931e29c",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/ringcentral-chat/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.ringcentral-phone",
+      "name": "ringcentral-phone",
+      "display_name": "RingCentral Phone",
+      "description": "Read call activity, AI call notes, SMS, voicemail, and fax, and send SMS.",
+      "source_path": "third_party/ringcentral-phone",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/ringcentral-phone",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/ringcentral-phone/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "ringcentral-phone",
+          "display_name": "RingCentral Phone",
+          "description": "Read call activity, AI call notes, SMS, voicemail, and fax, and send SMS.",
+          "version": "1.1.0",
+          "source_blob_sha": "5d23e702d46eb3751d69703448fc12fdfe8e0ca1",
+          "source_file_hash": "fc2f8b7c6a839a54cc3b25b5bd27f611417085ec00261aa7500a74a0e922891d",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/ringcentral-phone/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.rippling",
+      "name": "rippling",
+      "display_name": "Rippling",
+      "description": "Look up people, time off, and company policy in Rippling, and file time-off requests and draft hires.",
+      "source_path": "third_party/rippling",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/rippling",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/rippling/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "rippling",
+          "display_name": "Rippling",
+          "description": "Look up people, time off, and company policy in Rippling, and file time-off requests and draft hires.",
+          "version": "1.0.0",
+          "source_blob_sha": "73170cb17a26c70520f516c5ac469bb0c2c81201",
+          "source_file_hash": "a8f83a2920d6ed602d066a8dc8269c120cf4db6bcc07c96deb41f0a58c6418f3",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/rippling/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.robinhood",
+      "name": "robinhood",
+      "display_name": "Robinhood",
+      "description": "View portfolios, positions, orders, watchlists, and market data, and trade in a Robinhood Agentic account.",
+      "source_path": "third_party/robinhood",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/robinhood",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/robinhood/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "robinhood",
+          "display_name": "Robinhood",
+          "description": "View portfolios, positions, orders, watchlists, and market data, and trade in a Robinhood Agentic account.",
+          "version": "1.0.0",
+          "source_blob_sha": "ec1c9937260d06477b592e9213fd9861fe00242b",
+          "source_file_hash": "15902252f3becb85a186adaa2ca2bc80014ab5381522269067cd0f5845e6a837",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/robinhood/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.salesforce",
+      "name": "salesforce",
+      "display_name": "Salesforce",
+      "description": "Query, create, and update records in your org.",
+      "source_path": "third_party/salesforce",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/salesforce",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/salesforce/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "salesforce",
+          "display_name": "Salesforce",
+          "description": "Query, create, and update records in your org.",
+          "version": "1.0.0",
+          "source_blob_sha": "fe4b624c1772f96d50599746e71af97ec80fd9e4",
+          "source_file_hash": "a397e766d4efd07bd079675acbfe56c6ce7defaca49c2e61ed3104da0d504e28",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/salesforce/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.salesforce-headless-360",
+      "name": "salesforce-headless-360",
+      "display_name": "Salesforce (Headless 360, Beta)",
+      "description": "Manage records, users, and org setup across Salesforce.",
+      "source_path": "third_party/salesforce-headless-360",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/salesforce-headless-360",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/salesforce-headless-360/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "salesforce-headless-360",
+          "display_name": "Salesforce (Headless 360, Beta)",
+          "description": "Manage records, users, and org setup across Salesforce.",
+          "version": "1.0.0",
+          "source_blob_sha": "02528c6fdeb4490254d3f159c6f1a58e31e77a80",
+          "source_file_hash": "f155d7f1583118c18ac4a3b36e776caf43716f5c6f1b3630ea2c3ad8079853c5",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/salesforce-headless-360/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.semrush",
+      "name": "semrush",
+      "display_name": "Semrush",
+      "description": "Research keywords, backlinks, traffic, and competitors.",
+      "source_path": "third_party/semrush",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/semrush",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/semrush/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "semrush",
+          "display_name": "Semrush",
+          "description": "Research keywords, backlinks, traffic, and competitors.",
+          "version": "1.0.0",
+          "source_blob_sha": "dc65454c978b3fbd45139d1ceb914d8e40ade4c7",
+          "source_file_hash": "4962e57b8c58d21af1ac2dad86c72048614811899728e240add1e252662afde8",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/semrush/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.servicenow",
+      "name": "servicenow",
+      "display_name": "ServiceNow",
+      "description": "Call the tools your admin publishes on a ServiceNow instance.",
+      "source_path": "third_party/servicenow",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/servicenow",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/servicenow/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "servicenow",
+          "display_name": "ServiceNow",
+          "description": "Call the tools your admin publishes on a ServiceNow instance.",
+          "version": "1.0.0",
+          "source_blob_sha": "66e49fd2daad78c4c2ac209e3174c2a0dcf7ff35",
+          "source_file_hash": "ca3aa1c9096c33e7b8462b5ee86b9250659ae50d4a8bb0a06b023baf679a1b2e",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/servicenow/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.sharepoint",
+      "name": "sharepoint",
+      "display_name": "SharePoint",
+      "description": "Search and read Microsoft SharePoint sites, document libraries, files, and lists.",
+      "source_path": "third_party/sharepoint",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/sharepoint",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/sharepoint/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "sharepoint",
+          "display_name": "SharePoint",
+          "description": "Search and read Microsoft SharePoint sites, document libraries, files, and lists.",
+          "version": "1.0.0",
+          "source_blob_sha": "8137c2fb7ad85ff383367c5d90d7e2351abbbf04",
+          "source_file_hash": "4c411fb3c2d70fb99bf15fc4c14b1d7e12bd3b14279d3151419aea4d4fab1bcc",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/sharepoint/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.shopify-store",
+      "name": "shopify-store",
+      "display_name": "Shopify",
+      "description": "Connect your Shopify store so Grok can answer questions about your products, orders, customers, inventory, and sales. You sign in with Shopify and approve the store access Grok requests; Grok keeps that authorization so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. xAI never sees or stores your Shopify password, and you can disconnect the store anytime from grok.com.",
+      "source_path": "third_party/shopify-store",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/shopify-store",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/shopify-store/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "shopify-store",
+          "display_name": "Shopify",
+          "description": "Connect your Shopify store so Grok can answer questions about your products, orders, customers, inventory, and sales. You sign in with Shopify and approve the store access Grok requests; Grok keeps that authorization so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. xAI never sees or stores your Shopify password, and you can disconnect the store anytime from grok.com.",
+          "version": "1.0.0",
+          "source_blob_sha": "74a62d5d5ff9ac4926059fd24c364ae0b243f332",
+          "source_file_hash": "fafeec340738598f8e17fcf7ec73b8ff94706f243972332f557dd6e3b807206c",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/shopify-store/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.similarweb",
+      "name": "similarweb",
+      "display_name": "Similarweb",
+      "description": "Analyze website traffic, audiences, and competitors.",
+      "source_path": "third_party/similarweb",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/similarweb",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/similarweb/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "similarweb",
+          "display_name": "Similarweb",
+          "description": "Analyze website traffic, audiences, and competitors.",
+          "version": "1.0.0",
+          "source_blob_sha": "e1d1254ad5ed6d2f0eee5d2df68e01513335fd7f",
+          "source_file_hash": "dead8bd65b388cef90a9c6d65cf964622e91f37593927fb331e2751504787c53",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/similarweb/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.smartsheet",
+      "name": "smartsheet",
+      "display_name": "Smartsheet",
+      "description": "Query and update sheets, rows, and workspaces.",
+      "source_path": "third_party/smartsheet",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/smartsheet",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/smartsheet/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "smartsheet",
+          "display_name": "Smartsheet",
+          "description": "Query and update sheets, rows, and workspaces.",
+          "version": "1.0.0",
+          "source_blob_sha": "ef60268ce8b7678c4d12baa4995949b2c1ff6601",
+          "source_file_hash": "94cf83143c6b4fff69dc369730e77d149f4b5dcb5ead439bc6700c242b6c8886",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/smartsheet/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.sp-global",
+      "name": "sp-global",
+      "display_name": "S&P Global",
+      "description": "Query S&P Capital IQ financials, prices, and transcripts.",
+      "source_path": "third_party/sp-global",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/sp-global",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/sp-global/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "sp-global",
+          "display_name": "S&P Global",
+          "description": "Query S&P Capital IQ financials, prices, and transcripts.",
+          "version": "1.0.0",
+          "source_blob_sha": "ee79402bb5d6a0e507171055f2693b9b277eab8f",
+          "source_file_hash": "d2ab11271977a104c27fccf018141652793782d7dcb76150477fd015e0fc7d8c",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/sp-global/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.square",
+      "name": "square",
+      "display_name": "Square",
+      "description": "Work with payments, orders, catalog, customers, and invoices.",
+      "source_path": "third_party/square",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/square",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/square/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "square",
+          "display_name": "Square",
+          "description": "Work with payments, orders, catalog, customers, and invoices.",
+          "version": "1.0.0",
+          "source_blob_sha": "f491fbaa8559002758a539c76372c1d600f79716",
+          "source_file_hash": "0e9fa3345d6ef49c456bcd725f2a15cdeaebc8e8ac8b2b5d460f6befbc9e4b53",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/square/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.stable",
+      "name": "stable",
+      "display_name": "Stable",
+      "description": "Find mail, read scanned documents, and call Stable API endpoints.",
+      "source_path": "third_party/stable",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/stable",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/stable/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "stable",
+          "display_name": "Stable",
+          "description": "Find mail, read scanned documents, and call Stable API endpoints.",
+          "version": "1.0.0",
+          "source_blob_sha": "362f7d687d29016fb8e567e8231e6a248e4a9267",
+          "source_file_hash": "e89862510ac84b8b076fe874baed58895e324ca1f867debbd8c3a93b72d5f087",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/stable/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.statsig",
+      "name": "statsig",
+      "display_name": "Statsig",
+      "description": "Inspect and manage feature gates, experiments, dynamic configs, and metrics.",
+      "source_path": "third_party/statsig",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/statsig",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/statsig/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "statsig",
+          "display_name": "Statsig",
+          "description": "Inspect and manage feature gates, experiments, dynamic configs, and metrics.",
+          "version": "2.0.0",
+          "source_blob_sha": "5f506faad27ba7c08b555eea3cfe80a00f3ac45d",
+          "source_file_hash": "be132320feb97254f98334e620d31c820914048dea211528a24d269810028e29",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/statsig/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.tailscale",
+      "name": "tailscale",
+      "display_name": "Tailscale",
+      "description": "Let Grok Bot reach your private Tailscale network. Connect your own tailnet in one click: Grok Bot's computer reaches your tailnet hosts by name, and Grok Bot can use MCP servers running on them. Company tailnets for teams are in beta.",
+      "source_path": "third_party/tailscale",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/tailscale",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/tailscale/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "tailscale",
+          "display_name": "Tailscale",
+          "description": "Let Grok Bot reach your private Tailscale network. Connect your own tailnet in one click: Grok Bot's computer reaches your tailnet hosts by name, and Grok Bot can use MCP servers running on them. Company tailnets for teams are in beta.",
+          "version": "1.0.6",
+          "source_blob_sha": "452e0f540fa21f308a59f4f135a0e4a9531e674f",
+          "source_file_hash": "d0fd6757eec069bbee14637494c53a3b8e56098516fa7127fd79e32bfd7b9b42",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/tailscale/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.teams",
+      "name": "teams",
+      "display_name": "Teams",
+      "description": "Search, read, and send Microsoft Teams chats and channel messages.",
+      "source_path": "third_party/teams",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/teams",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/teams/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "teams",
+          "display_name": "Teams",
+          "description": "Search, read, and send Microsoft Teams chats and channel messages.",
+          "version": "1.0.0",
+          "source_blob_sha": "cb78a4ca5d574b2b2d11b93e3545e30e78a16a8b",
+          "source_file_hash": "57098265df2961c2a6c8faa28a0c1dbb429b0334c67f79b9e4a10bf94ef844e9",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/teams/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.tesla",
+      "name": "tesla",
+      "display_name": "Tesla",
+      "description": "Read your Tesla cars and energy sites, and send commands you confirm.",
+      "source_path": "third_party/tesla",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/tesla",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/tesla/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "tesla",
+          "display_name": "Tesla",
+          "description": "Read your Tesla cars and energy sites, and send commands you confirm.",
+          "version": "1.0.0",
+          "source_blob_sha": "34c366fe57cd96dc13c870297e278739b6478286",
+          "source_file_hash": "6cb0452e5e7ce1620910cf20004ab1364c30f47883c98726ed2c16badfb393b7",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/tesla/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.tiktok-for-business",
+      "name": "tiktok-for-business",
+      "display_name": "TikTok for Business",
+      "description": "Manage TikTok ad campaigns, ad groups, ads, audiences, creatives, and reports.",
+      "source_path": "third_party/tiktok-for-business",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/tiktok-for-business",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/tiktok-for-business/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "tiktok-for-business",
+          "display_name": "TikTok for Business",
+          "description": "Manage TikTok ad campaigns, ad groups, ads, audiences, creatives, and reports.",
+          "version": "1.0.0",
+          "source_blob_sha": "c5eef8d14e16637871962b7b9c89a1149280717c",
+          "source_file_hash": "e16d9637816a6101b649e0bbe7b1e54fe67129005cba0b1c87f6af8393dd0b6a",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/tiktok-for-business/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.tinyfish",
+      "name": "tinyfish",
+      "display_name": "TinyFish",
+      "description": "Browse and automate the web with TinyFish: run multi-step web automations, search the web, extract clean page content, and drive remote stealth browser sessions.",
+      "source_path": "third_party/tinyfish",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/tinyfish",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/tinyfish/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "tinyfish",
+          "display_name": "TinyFish",
+          "description": "Browse and automate the web with TinyFish: run multi-step web automations, search the web, extract clean page content, and drive remote stealth browser sessions.",
+          "version": "1.0.1",
+          "source_blob_sha": "64688b5023b503c3325fdb725d9c79450bf8e1e2",
+          "source_file_hash": "8442d6ec05c60318e8ab3084653c3a35d796d7d67b890586e8e3360501521b7b",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/tinyfish/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.todoist",
+      "name": "todoist",
+      "display_name": "Todoist",
+      "description": "Create, find, and complete tasks and projects.",
+      "source_path": "third_party/todoist",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/todoist",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/todoist/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "todoist",
+          "display_name": "Todoist",
+          "description": "Create, find, and complete tasks and projects.",
+          "version": "1.0.1",
+          "source_blob_sha": "9fd3b405109dc8dbf0bad559afc2543568dedaba",
+          "source_file_hash": "1611265fb3483396030db0701303bd3e9a759a35444436ac9d9e8bb186503f91",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/todoist/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.trello",
+      "name": "trello",
+      "display_name": "Trello",
+      "description": "Manage your Trello workspace from chat: browse and create boards, view and move lists, create, update, move, archive, and complete cards with labels and due dates, manage checklists, capture Inbox cards, schedule Planner focus time, and search across boards.",
+      "source_path": "third_party/trello",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/trello",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/trello/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "trello",
+          "display_name": "Trello",
+          "description": "Manage your Trello workspace from chat: browse and create boards, view and move lists, create, update, move, archive, and complete cards with labels and due dates, manage checklists, capture Inbox cards, schedule Planner focus time, and search across boards.",
+          "version": "1.0.1",
+          "source_blob_sha": "d893feab149e3ace7cac9785d36e535abc3dcdfc",
+          "source_file_hash": "49d3c7ca3b602d2b5b1533e55304c57d32fd0a64b3638c43c1f0b57afdf81ad0",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/trello/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.typeform",
+      "name": "typeform",
+      "display_name": "Typeform",
+      "description": "Build forms, analyze responses, and manage contacts.",
+      "source_path": "third_party/typeform",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/typeform",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/typeform/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "typeform",
+          "display_name": "Typeform",
+          "description": "Build forms, analyze responses, and manage contacts.",
+          "version": "1.0.0",
+          "source_blob_sha": "ddcd47194359dcce42974e62d0e5d3a9aee77da3",
+          "source_file_hash": "6b851f9199f7968223585dfeb4c00cac479308c174f3ee228a76cb435842d549",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/typeform/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.upwork",
+      "name": "upwork",
+      "display_name": "Upwork",
+      "description": "Search talent, post jobs, and manage contracts.",
+      "source_path": "third_party/upwork",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/upwork",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/upwork/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "upwork",
+          "display_name": "Upwork",
+          "description": "Search talent, post jobs, and manage contracts.",
+          "version": "1.0.0",
+          "source_blob_sha": "1c4bf3c213d220c0b0d39ec9ebce04120c6dad9d",
+          "source_file_hash": "ec6839fc357a950af9dc28610025a71e83ac827ee9c9acb6f21fcd7753232f61",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/upwork/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.vanta",
+      "name": "vanta",
+      "display_name": "Vanta",
+      "description": "Query and remediate compliance tests, controls, frameworks, risks, and vulnerabilities in Vanta.",
+      "source_path": "third_party/vanta",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/vanta",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/vanta/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "vanta",
+          "display_name": "Vanta",
+          "description": "Query and remediate compliance tests, controls, frameworks, risks, and vulnerabilities in Vanta.",
+          "version": "1.1.0",
+          "source_blob_sha": "d4976d6facfb92f5a6bab039d143327b77222bac",
+          "source_file_hash": "1b2d900842017a829454ca13975dc918c313a8087603b06c0004f77b043691b8",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/vanta/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.webull",
+      "name": "webull",
+      "display_name": "Webull",
+      "description": "View accounts, positions, orders, watchlists, and market data.",
+      "source_path": "third_party/webull",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/webull",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/webull/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "webull",
+          "display_name": "Webull",
+          "description": "View accounts, positions, orders, watchlists, and market data.",
+          "version": "1.0.1",
+          "source_blob_sha": "8aa0335b95e5a6349dc271350ef07fee3f781838",
+          "source_file_hash": "b305edc2e24e624bbd8fd8e434000535385cbfc3ad36ea41788e9042e9a7e15f",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/webull/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.whatsapp-business",
+      "name": "whatsapp-business",
+      "display_name": "WhatsApp Business",
+      "description": "Send messages and manage templates, contacts, and phone numbers in WhatsApp Business.",
+      "source_path": "third_party/whatsapp-business",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/whatsapp-business",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/whatsapp-business/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "whatsapp-business",
+          "display_name": "WhatsApp Business",
+          "description": "Send messages and manage templates, contacts, and phone numbers in WhatsApp Business.",
+          "version": "1.0.0",
+          "source_blob_sha": "373917f4bc6de5077cf22f0d45f93f4efcf7afe3",
+          "source_file_hash": "0fdaa86ca986bdd041d3edb1fd2e7680ac5858903d534123a47bfcd6b1b4fada",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/whatsapp-business/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.workable",
+      "name": "workable",
+      "display_name": "Workable",
+      "description": "Search candidates, move pipelines, and manage HR records.",
+      "source_path": "third_party/workable",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/workable",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/workable/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "workable",
+          "display_name": "Workable",
+          "description": "Search candidates, move pipelines, and manage HR records.",
+          "version": "1.0.0",
+          "source_blob_sha": "c4b33f0bad6f333a0995a2142afa839da75d6fb4",
+          "source_file_hash": "ea4de6625365e69769d54739ee59402362747d378693e3a99aa8b00ce146f3c9",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/workable/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.workday",
+      "name": "workday",
+      "display_name": "Workday",
+      "description": "Look up workers, organizations, time off, payroll, and recruiting data in Workday.",
+      "source_path": "third_party/workday",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/workday",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/workday/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "workday",
+          "display_name": "Workday",
+          "description": "Look up workers, organizations, time off, payroll, and recruiting data in Workday.",
+          "version": "1.1.0",
+          "source_blob_sha": "baa79b7b5bfa9ed36e958249db717aa7852b808e",
+          "source_file_hash": "6b6d29d5ae9c9014e68903d4afe6eb78e1a7bb05ed336b70c8b169207b9c9cbd",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/workday/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.wrike",
+      "name": "wrike",
+      "display_name": "Wrike",
+      "description": "Search projects, create tasks, and post comments.",
+      "source_path": "third_party/wrike",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/wrike",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/wrike/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "wrike",
+          "display_name": "Wrike",
+          "description": "Search projects, create tasks, and post comments.",
+          "version": "1.0.0",
+          "source_blob_sha": "6d0e8f959a746cf09f5672ea31234b5d0a1e8d56",
+          "source_file_hash": "b4c0dc57c39e97b9c64af8993e10a93bf36238a4b6ab648a62804a22b8af8c4f",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/wrike/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.x",
+      "name": "x",
+      "display_name": "X",
+      "description": "Search posts, read timelines, pull trends, explore Spaces and communities, manage lists and bookmarks, access X Chat, schedule X calls, and manage livestreams.",
+      "source_path": "third_party/x",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/x",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/x/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "x",
+          "display_name": "X",
+          "description": "Search posts, read timelines, pull trends, explore Spaces and communities, manage lists and bookmarks, access X Chat, schedule X calls, and manage livestreams.",
+          "version": "2.11.1",
+          "source_blob_sha": "241da22f3eac49f86dd1d0488b6b255f3915f337",
+          "source_file_hash": "6aa1b52e41f70b663ad16f30ad617258d5e968a5cfeeac0f58242dd8f2edfc81",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/x/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.x-ads",
+      "name": "x-ads",
+      "display_name": "X Ads",
+      "description": "Manage ad campaigns, create ads, track conversions, and pull performance stats.",
+      "source_path": "third_party/x-ads",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/x-ads",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/x-ads/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "x-ads",
+          "display_name": "X Ads",
+          "description": "Manage ad campaigns, create ads, track conversions, and pull performance stats.",
+          "version": "1.0.0",
+          "source_blob_sha": "08cb49e39a771ac105b8008a23ee049d7a08ca27",
+          "source_file_hash": "1066cde3fe726f87370c30cadee12e72291e4ca6b05fedbc72112a54b3dd2546",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/x-ads/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.x-money",
+      "name": "x-money",
+      "display_name": "X Money",
+      "description": "Use your X Money Card, send money to users on X, manage your finances, view your balance and browse through your transaction history.",
+      "source_path": "third_party/x-money",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/x-money",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/x-money/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "x-money",
+          "display_name": "X Money",
+          "description": "Use your X Money Card, send money to users on X, manage your finances, view your balance and browse through your transaction history.",
+          "version": "1.0.0",
+          "source_blob_sha": "212d990b3b0777e77f520b3996c27de5bd6db9b2",
+          "source_file_hash": "02078fdfc56b5c54dbf211269ef95a57ec9770e4a8a1efe7d1f43cb7d76213dc",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/x-money/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.xero",
+      "name": "xero",
+      "display_name": "Xero",
+      "description": "Read and write invoices, contacts, reports, and payroll.",
+      "source_path": "third_party/xero",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/xero",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/xero/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "xero",
+          "display_name": "Xero",
+          "description": "Read and write invoices, contacts, reports, and payroll.",
+          "version": "1.0.0",
+          "source_blob_sha": "34a3a26db7062b5bc9e2dbfdd89d601146687efb",
+          "source_file_hash": "b7cdec931042272d3242c81f79fb7a14bc9735852f0eba65f3c77f9f7026f84f",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/xero/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.zoho-books",
+      "name": "zoho-books",
+      "display_name": "Zoho Books",
+      "description": "Work with contacts, invoices, estimates, and items in Zoho Books.",
+      "source_path": "third_party/zoho-books",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/zoho-books",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/zoho-books/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "zoho-books",
+          "display_name": "Zoho Books",
+          "description": "Work with contacts, invoices, estimates, and items in Zoho Books.",
+          "version": "1.0.0",
+          "source_blob_sha": "96c68e78c61f8d3dc4b5aa07cd6d33a118594ace",
+          "source_file_hash": "beab261ececf0f1bcd2ea8a3fae0f475087695d9e89851211a76fa1409f48395",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/zoho-books/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.zoho-crm",
+      "name": "zoho-crm",
+      "display_name": "Zoho CRM",
+      "description": "Work with leads, contacts, accounts, deals, and other Zoho CRM records.",
+      "source_path": "third_party/zoho-crm",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/zoho-crm",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/zoho-crm/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "zoho-crm",
+          "display_name": "Zoho CRM",
+          "description": "Work with leads, contacts, accounts, deals, and other Zoho CRM records.",
+          "version": "1.0.0",
+          "source_blob_sha": "a9113dfa7b0cfd23b7f36393b0ea899ae35da105",
+          "source_file_hash": "644cf4152fa4fc82cb09f43e268781005df51d675d29c81e9fcda1c2e624868c",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/zoho-crm/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.zoho-desk",
+      "name": "zoho-desk",
+      "display_name": "Zoho Desk",
+      "description": "Work with tickets, contacts, tasks, and knowledge base articles in Zoho Desk.",
+      "source_path": "third_party/zoho-desk",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/zoho-desk",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/zoho-desk/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "zoho-desk",
+          "display_name": "Zoho Desk",
+          "description": "Work with tickets, contacts, tasks, and knowledge base articles in Zoho Desk.",
+          "version": "1.0.0",
+          "source_blob_sha": "5f4f1c0f1510d72b5e7af5ed8fb034b72093e5eb",
+          "source_file_hash": "71258e75f69ec47137cb866afacdd57159ede04c5288159623a9c421fb8b3fd0",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/zoho-desk/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "third_party.zoom",
+      "name": "zoom",
+      "display_name": "Zoom",
+      "description": "Search meetings, pull transcripts, and work with Zoom Docs.",
+      "source_path": "third_party/zoom",
+      "source_url": "https://github.com/cursor/plugins/tree/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/zoom",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "third_party/zoom/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "name": "zoom",
+          "display_name": "Zoom",
+          "description": "Search meetings, pull transcripts, and work with Zoom Docs.",
+          "version": "1.0.2",
+          "source_blob_sha": "9f630f86e8e7c993de3bc0490a53ac0cb873fe24",
+          "source_file_hash": "1b8b8d61a9cad301f8f67f4c9825b96733612f5112e56302b1ba7f65952b037d",
+          "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+          "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/third_party/zoom/.cursor-plugin/plugin.json"
+        }
+      ],
+      "status": "active"
+    }
+  ]
 }
