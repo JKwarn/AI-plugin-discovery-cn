@@ -25,6 +25,7 @@ SCHEMA_FILES = {
     "proposal": "proposal.schema.json",
     "migration": "migration.schema.json",
     "taxonomy_config": "taxonomy-config.schema.json",
+    "changelog": "changelog.schema.json",
 }
 
 
@@ -208,6 +209,7 @@ class Validator:
         for filename, schema_key in (
             ("taxonomy-config.json", "taxonomy_config"),
             ("migrations.json", "migration"),
+            ("changelog.json", "changelog"),
         ):
             path = self.data_dir / "taxonomy" / filename
             document = self.read_json(path)
@@ -241,6 +243,56 @@ class Validator:
                         self.error(f"{migration_id}: target '{category_id}' does not exist")
                     elif target[0] != migration.get("dimension"):
                         self.error(f"{migration_id}: target '{category_id}' has wrong dimension")
+
+        changelog_path = self.data_dir / "taxonomy" / "changelog.json"
+        changelog = self.read_json(changelog_path)
+        migration_by_id = {}
+        if isinstance(migrations, dict):
+            migration_by_id = {
+                item.get("migration_id"): item
+                for item in migrations.get("migrations", [])
+                if isinstance(item, dict) and isinstance(item.get("migration_id"), str)
+            }
+        if isinstance(changelog, dict):
+            seen_change_ids: set[str] = set()
+            for entry in changelog.get("entries", []):
+                if not isinstance(entry, dict):
+                    continue
+                change_id = entry.get("change_id", "<unknown>")
+                if change_id in seen_change_ids:
+                    self.error(f"Duplicate changelog change_id: {change_id}")
+                seen_change_ids.add(change_id)
+                dimension = entry.get("dimension")
+                for category_id in entry.get("category_ids", []):
+                    target = self.nodes.get(category_id)
+                    if target is None:
+                        self.error(f"{change_id}: unknown category '{category_id}'")
+                    elif target[0] != dimension:
+                        self.error(
+                            f"{change_id}: category '{category_id}' belongs to {target[0]}, not {dimension}"
+                        )
+                migration_id = entry.get("migration_id")
+                if migration_id is not None:
+                    migration = migration_by_id.get(migration_id)
+                    if migration is None:
+                        self.error(f"{change_id}: unknown migration '{migration_id}'")
+                    elif migration.get("dimension") != dimension:
+                        self.error(
+                            f"{change_id}: migration dimension '{migration.get('dimension')}' "
+                            f"does not match changelog dimension '{dimension}'"
+                        )
+                    elif migration.get("type") != entry.get("type"):
+                        self.error(
+                            f"{change_id}: migration type '{migration.get('type')}' "
+                            f"does not match changelog type '{entry.get('type')}'"
+                        )
+                    else:
+                        affected_ids = set(migration.get("from_ids", [])) | set(migration.get("to_ids", []))
+                        changelog_ids = set(entry.get("category_ids", []))
+                        if changelog_ids != affected_ids:
+                            self.error(
+                                f"{change_id}: category_ids must match migration from_ids and to_ids"
+                            )
 
     def run(self) -> bool:
         self.load_schemas()

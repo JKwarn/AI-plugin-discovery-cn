@@ -1,6 +1,6 @@
 # 数据模型规范（v1.0.0，核心契约已冻结）
 
-本文定义本仓库分类数据模型 v1.0.0。六份 JSON Schema 与本文共同构成当前核心数据契约。正式数据和测试夹具必须遵守这些结构；不得在不升级 `schema_version` 的情况下改变字段含义或结构。
+本文定义本仓库分类数据模型 v1.0.0。七份 JSON Schema 与本文共同构成当前核心数据契约。正式数据和测试夹具必须遵守这些结构；不得在不升级 `schema_version` 的情况下改变字段含义或结构。
 
 ## 1. 数据文件
 
@@ -14,7 +14,7 @@
 | `data/taxonomy/migrations.json` | 分类合并、拆分、弃用和归档记录 | `migration.schema.json` |
 | `data/assignments/skills.json` | Skill 到分类节点的直接关联 | `assignment.schema.json` |
 | `data/proposals/index.json` | 待审核分类/关联提案 | `proposal.schema.json` |
-| `data/taxonomy/changelog.json` | 正式分类变更摘要 | v1.0.0 暂不允许写入新条目；首次写入前必须补充专用 Schema |
+| `data/taxonomy/changelog.json` | 正式分类变更摘要 | `changelog.schema.json` |
 
 Plugin 和 Skill 上游索引、来源快照属于资源同步模型，不属于本次分类核心 Schema 冻结范围。
 
@@ -71,7 +71,23 @@ Plugin 可以聚合其所属 Skill 的分类，但聚合结果必须保留来源
 
 同步资源时记录上游 commit SHA（40 位十六进制），资源文件 hash（SHA-256，64 位十六进制）。分类关联保留审核信息及其依据的资源 revision。趋势分析依赖跨时间快照，因此不得只保留当前状态。
 
-## 8. 校验边界
+## 8. 分类变更日志
+
+`data/taxonomy/changelog.json` 记录正式分类体系的变更摘要，不记录尚未审核的提案。文件顶层包含固定的 `schema_version` 和 `entries` 数组；当前 Schema 版本为 `1.0.0`。
+
+每条记录包含：
+
+- `change_id`：以 `change.` 开头的永久唯一记录 ID。
+- `taxonomy_version`：该变更生效后的分类体系版本。
+- `effective_at`：变更生效日期。
+- `type`：`add`、`update`、`rename`、`reparent`、`merge`、`split`、`deprecate` 或 `archive`。
+- `dimension` 与 `category_ids`：变更所属维度及涉及的分类节点。
+- `summary`：简明变更摘要；可用 `details` 补充说明。
+- `migration_id`：合并、拆分、弃用或归档等迁移型变更必须引用 `migrations.json` 中的记录。
+
+Schema 负责条目结构和字段格式；Python 校验器进一步检查 `change_id` 唯一性、分类节点存在且维度一致，以及迁移记录存在且维度匹配。当前日志保持空数组；只有正式分类变更经审核并应用后，才应追加记录。
+
+## 9. 校验边界
 
 - JSON Schema 负责单文件结构、字段类型、必填字段、枚举和格式。
 - Python 校验器负责跨文件引用、ID 唯一性、维度前缀、父节点一致性、循环、审核记录和迁移语义。
