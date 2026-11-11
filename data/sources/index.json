@@ -5,7 +5,13 @@
       "id": "cursor.plugins",
       "name": "Cursor Plugins",
       "repository": "https://github.com/cursor/plugins",
-      "access": "read_only"
+      "access": "read_only",
+      "branch": "main",
+      "latest_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "latest_commit_date": "2026-11-11T00:09:36-08:00",
+      "latest_snapshot": "sources/snapshots/cursor.plugins/5866df557357d005b3c0c9d3da0d9e739b4bdde3.json",
+      "plugin_count": 134,
+      "skill_count": 173
     }
   ]
 }
