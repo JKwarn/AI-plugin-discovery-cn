@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/JKwarn/AI-plugin-discovery-cn/main/schemas/changelog.schema.json",
-  "title": "Taxonomy changelog",
+  "title": "分类变更日志",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "entries"],
