@@ -1,4 +1,125 @@
 {
   "schema_version": "1.0.0",
-  "assignments": {}
+  "assignments": {
+    "pstack.how": {
+      "dimensions": {
+        "functions": [
+          {
+            "category_id": "function.codebase_analysis",
+            "reason": "该 Skill 用于解释代码库、子系统架构、运行流程及模块职责。",
+            "confidence": 0.95,
+            "status": "proposed"
+          }
+        ],
+        "roles": [
+          {
+            "category_id": "role.software_developer",
+            "reason": "软件开发者可用它快速建立现有代码库上下文。",
+            "confidence": 0.88,
+            "status": "proposed"
+          }
+        ],
+        "scenarios": [
+          {
+            "category_id": "scenario.understand_existing_subsystem",
+            "reason": "其核心任务是帮助使用者理解已有子系统及其运行流程。",
+            "confidence": 0.96,
+            "status": "proposed"
+          }
+        ],
+        "tags": [
+          {
+            "category_id": "tag.read_only",
+            "reason": "该 Skill 的主要用途是理解和分析，不直接要求修改代码。",
+            "confidence": 0.9,
+            "status": "proposed"
+          },
+          {
+            "category_id": "tag.architecture",
+            "reason": "内容覆盖子系统架构、模块职责和分层关系。",
+            "confidence": 0.92,
+            "status": "proposed"
+          }
+        ]
+      }
+    },
+    "pstack.architect": {
+      "dimensions": {
+        "functions": [
+          {
+            "category_id": "function.software_design",
+            "reason": "该 Skill 建立实现前的结构、签名、类关系和模块边界设计。",
+            "confidence": 0.93,
+            "status": "proposed"
+          }
+        ],
+        "roles": [
+          {
+            "category_id": "role.software_developer",
+            "reason": "开发者可用它在编码前明确实现结构和模块边界。",
+            "confidence": 0.9,
+            "status": "proposed"
+          },
+          {
+            "category_id": "role.software_architect",
+            "reason": "它涉及跨模块职责划分与架构边界决策。",
+            "confidence": 0.82,
+            "status": "proposed"
+          }
+        ],
+        "scenarios": [
+          {
+            "category_id": "scenario.design_cross_boundary_change",
+            "reason": "适用于需要先确定跨模块接口和边界的变更。",
+            "confidence": 0.9,
+            "status": "proposed"
+          }
+        ],
+        "tags": [
+          {
+            "category_id": "tag.architecture",
+            "reason": "工作重点包含模块边界、类结构和系统设计。",
+            "confidence": 0.96,
+            "status": "proposed"
+          }
+        ]
+      }
+    },
+    "pstack.tdd": {
+      "dimensions": {
+        "functions": [
+          {
+            "category_id": "function.test_driven_development",
+            "reason": "该 Skill 强调先编写失败测试，再实现修复或功能。",
+            "confidence": 0.98,
+            "status": "proposed"
+          }
+        ],
+        "roles": [
+          {
+            "category_id": "role.software_developer",
+            "reason": "软件开发者可用它通过测试驱动方式完成缺陷修复。",
+            "confidence": 0.94,
+            "status": "proposed"
+          }
+        ],
+        "scenarios": [
+          {
+            "category_id": "scenario.fix_bug_with_regression_test",
+            "reason": "适用于存在明确、低成本测试路径的缺陷修复，并建立回归保护。",
+            "confidence": 0.95,
+            "status": "proposed"
+          }
+        ],
+        "tags": [
+          {
+            "category_id": "tag.test_driven",
+            "reason": "该 Skill 以测试先行的开发循环为核心。",
+            "confidence": 0.99,
+            "status": "proposed"
+          }
+        ]
+      }
+    }
+  }
 }
