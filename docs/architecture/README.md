@@ -10,9 +10,9 @@
 
 1. **同步（sync）**：读取上游仓库固定 revision，提取 Plugin、Skill 清单和原始文件。
 2. **解析（ingest，后续可并入 sync）**：生成规范化资源元数据，记录来源路径、manifest 格式/路径/版本、revision 和文件 hash。
-3. **翻译（translate）**：生成中文阅读内容，同时保留英文原文引用与上游链接。
+3. **翻译（translate）**：生成独立的中文阅读内容，通过译文注册表记录原文路径、revision 和内容 hash。
 4. **分类（classify）**：为 Skill 生成四个维度的候选关联；AI 输出只能进入待审核数据。
-5. **校验（validate）**：执行 JSON Schema、ID、引用、层级、迁移和审核状态等一致性检查。
+5. **校验（validate）**：执行 JSON Schema、ID、引用、层级、迁移、译文来源新鲜度和审核状态等一致性检查。
 6. **构建（后续阶段）**：生成供网站读取的索引和聚合视图。
 7. **趋势分析（analyze）**：独立比较不同时间快照，识别新兴主题、分类覆盖缺口和分类结构问题，输出报告及建议。
 
@@ -49,10 +49,14 @@ Plugin 可聚合其所属 Skill 的分类信息，并记录来源 Skill ID。聚
 
 ## 6. 可追溯性与版本
 
-每次同步应记录上游仓库 commit SHA。资源文件记录内容 hash；分类关联变更记录审核信息及其所依据的资源 revision。分类趋势分析应保留历史快照，且与日常 Skill 分类任务分离。
+每次同步应记录上游仓库 commit SHA。资源文件记录内容 hash；译文注册表记录其对应的原始 Skill revision、SHA-256 和 Git Blob SHA；分类关联变更记录审核信息及其所依据的资源 revision。分类趋势分析应保留历史快照，且与日常 Skill 分类任务分离。
 
-数据结构版本（schema_version）与分类体系版本（taxonomy_version）分别管理。当前阶段仍在建立模型和校验规范，尚未冻结正式 Schema。
+数据结构版本（schema_version）与分类体系版本（taxonomy_version）分别管理。分类核心数据契约已冻结为 v1.0.0；译文注册表使用独立的 schema_version。
 
 ## 7. GitHub 自动化原则
 
 项目以 GitHub Actions 和 GitHub Pages 为目标运行环境，日常维护优先支持 GitHub 网页编辑。正式数据或逻辑更新应先通过校验，再经 Pull Request 审查；不在初始骨架阶段部署网站或自动执行未经审核的分类变更。
+
+## 8. 译文存储
+
+Skill 中文译文存放于 `content/skills/<skill-id>/SKILL.zh-CN.md`，来源信息集中登记于 `data/translations/skills.json`。详细字段、过期判定和校验规则见[Skill 中文译文存储与来源追踪](translations.md)。
