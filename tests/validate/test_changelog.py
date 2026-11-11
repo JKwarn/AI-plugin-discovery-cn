@@ -6,7 +6,7 @@ from scripts.validate.validate_taxonomy import Validator
 
 def test_empty_changelog_is_valid(data_dir, schemas_dir):
     validator = Validator(data_dir, schemas_dir)
-    assert validator.run(), "\\n".join(validator.errors)
+    assert validator.run(), "\n".join(validator.errors)
 
 
 def test_rejects_duplicate_change_id(tmp_path, data_dir, schemas_dir):
