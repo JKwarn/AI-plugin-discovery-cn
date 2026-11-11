@@ -108,3 +108,38 @@ def test_migration_change_dimension_must_match(tmp_path, data_dir, schemas_dir):
     assert not validator.run()
     assert any("migration dimension 'functions' does not match changelog dimension 'roles'" in error
                for error in validator.errors)
+
+def test_migration_change_type_must_match(tmp_path, data_dir, schemas_dir):
+    copied = tmp_path / "data"
+    shutil.copytree(data_dir, copied)
+    migration_path = copied / "taxonomy" / "migrations.json"
+    migrations = json.loads(migration_path.read_text(encoding="utf-8"))
+    migrations["migrations"] = [{
+        "migration_id": "migration.test",
+        "type": "deprecate",
+        "dimension": "functions",
+        "from_ids": ["function.software_engineering"],
+        "to_ids": [],
+        "effective_at": "2026-11-11",
+        "reason": "测试迁移类型"
+    }]
+    migration_path.write_text(json.dumps(migrations), encoding="utf-8")
+
+    changelog_path = copied / "taxonomy" / "changelog.json"
+    changelog = json.loads(changelog_path.read_text(encoding="utf-8"))
+    changelog["entries"] = [{
+        "change_id": "change.type_mismatch",
+        "taxonomy_version": "1.0.1",
+        "effective_at": "2026-11-11",
+        "type": "archive",
+        "dimension": "functions",
+        "category_ids": ["function.software_engineering"],
+        "summary": "测试迁移类型不匹配",
+        "migration_id": "migration.test"
+    }]
+    changelog_path.write_text(json.dumps(changelog), encoding="utf-8")
+
+    validator = Validator(copied, schemas_dir)
+    assert not validator.run()
+    assert any("migration type 'deprecate' does not match changelog type 'archive'" in error
+               for error in validator.errors)
