@@ -1,4 +1,63 @@
 {
   "schema_version": "1.0.0",
-  "entries": []
+  "entries": [
+    {
+      "change_id": "change.bootstrap_functions",
+      "taxonomy_version": "1.0.0",
+      "effective_at": "2026-11-11",
+      "type": "add",
+      "dimension": "functions",
+      "category_ids": [
+        "function.software_engineering",
+        "function.codebase_analysis",
+        "function.software_design",
+        "function.software_testing",
+        "function.test_driven_development"
+      ],
+      "summary": "建立首批功能分类节点",
+      "details": "本批分类节点基于 pstack 试点分类整理，作为正式分类体系的初始内容；后续分类扩展仍需独立审核。"
+    },
+    {
+      "change_id": "change.bootstrap_roles",
+      "taxonomy_version": "1.0.0",
+      "effective_at": "2026-11-11",
+      "type": "add",
+      "dimension": "roles",
+      "category_ids": [
+        "role.software_developer",
+        "role.software_architect"
+      ],
+      "summary": "建立首批角色分类节点",
+      "details": "本批分类节点基于 pstack 试点分类整理，作为正式分类体系的初始内容；后续分类扩展仍需独立审核。"
+    },
+    {
+      "change_id": "change.bootstrap_scenarios",
+      "taxonomy_version": "1.0.0",
+      "effective_at": "2026-11-11",
+      "type": "add",
+      "dimension": "scenarios",
+      "category_ids": [
+        "scenario.software_development_maintenance",
+        "scenario.understand_existing_subsystem",
+        "scenario.design_cross_boundary_change",
+        "scenario.fix_bug_with_regression_test"
+      ],
+      "summary": "建立首批场景分类节点",
+      "details": "本批分类节点基于 pstack 试点分类整理，作为正式分类体系的初始内容；后续分类扩展仍需独立审核。"
+    },
+    {
+      "change_id": "change.bootstrap_tags",
+      "taxonomy_version": "1.0.0",
+      "effective_at": "2026-11-11",
+      "type": "add",
+      "dimension": "tags",
+      "category_ids": [
+        "tag.read_only",
+        "tag.architecture",
+        "tag.test_driven"
+      ],
+      "summary": "建立首批标签分类节点",
+      "details": "本批分类节点基于 pstack 试点分类整理，作为正式分类体系的初始内容；后续分类扩展仍需独立审核。"
+    }
+  ]
 }
