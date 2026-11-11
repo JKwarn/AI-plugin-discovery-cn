@@ -153,6 +153,7 @@ class Validator:
         skill_index_path = self.data_dir / "skills" / "index.json"
         skill_index = self.read_json(skill_index_path)
         skill_ids: set[str] = set()
+        active_skill_ids: set[str] = set()
         has_skill_index = isinstance(skill_index, dict) and isinstance(skill_index.get("skills"), list)
         if has_skill_index:
             for skill in skill_index["skills"]:
@@ -162,6 +163,8 @@ class Validator:
                 if skill["id"] in skill_ids:
                     self.error(f"Duplicate Skill ID: {skill['id']}")
                 skill_ids.add(skill["id"])
+                if skill.get("status", "active") == "active":
+                    active_skill_ids.add(skill["id"])
                 self.validate_source_metadata(skill, skill_index_path)
 
         assignments = document.get("assignments", {})
@@ -194,11 +197,11 @@ class Validator:
                             approved_functions += 1
                         if not item.get("reviewed_by") or not item.get("reviewed_at"):
                             self.error(f"{skill_id}: approved assignment '{category_id}' needs reviewed_by and reviewed_at")
-            if self.strict_approved and skill_id in skill_ids and approved_functions == 0:
+            if self.strict_approved and skill_id in active_skill_ids and approved_functions == 0:
                 self.error(f"{skill_id}: at least one approved function assignment is required")
 
         if self.strict_approved and has_skill_index:
-            for skill_id in sorted(skill_ids - set(assignments)):
+            for skill_id in sorted(active_skill_ids - set(assignments)):
                 self.error(f"{skill_id}: missing assignment record")
 
     def validate_other_files(self) -> None:
