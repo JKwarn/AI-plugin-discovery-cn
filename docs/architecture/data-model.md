@@ -31,7 +31,7 @@ Plugin 和 Skill 上游索引、来源快照属于资源同步模型，不属于
 
 ## 3. 分类节点
 
-节点包含永久稳定的 `id`、URL 用 `slug`、中英文名称和描述、`parent_id`、别名、生命周期状态、排序及日期。
+节点包含永久稳定的 `id)、URL 用 `slug)、中英文名称和描述、`parent_id`、别名、生命周期状态、排序及日期。
 
 - ID 前缀分别为 `function.`、`role.`、`scenario.`、`tag.`。
 - functions、roles、scenarios 允许多级父子关系；tags 不允许父节点。
@@ -44,7 +44,7 @@ Plugin 和 Skill 上游索引、来源快照属于资源同步模型，不属于
 
 `skills.json` 按 Skill ID 建立映射。每个 Skill 的四个维度都存在数组；数组可以为空。每条关联必须记录：
 
-- `category_id)：分类节点 ID。
+- `category_id`：分类节点 ID。
 - `reason`：明确的语义依据，不得仅凭关键词匹配。
 - `confidence`：0 到 1 的辅助置信度。
 - `status`：`proposed`、`approved` 或 `rejected`。
