@@ -4,17 +4,29 @@
     {
       "id": "pstack.how",
       "plugin_id": "pstack",
-      "source_path": "pstack/skills/how/SKILL.md"
+      "source_path": "pstack/skills/how/SKILL.md",
+      "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/pstack/skills/how/SKILL.md",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "source_file_hash": "08a00079bb15b4258874ac3ff62d4ca7e94350ffedb521d0fd296dc9dd21904e",
+      "source_blob_sha": "67edc340d4d8a9c7ab0b9e08c663e0e63b8d9125"
     },
     {
       "id": "pstack.architect",
       "plugin_id": "pstack",
-      "source_path": "pstack/skills/architect/SKILL.md"
+      "source_path": "pstack/skills/architect/SKILL.md",
+      "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/pstack/skills/architect/SKILL.md",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "source_file_hash": "31f8e97a52bfa5432edd61f68ade2a8632ef0bacbc2d2a6802d7a0e6821944ac",
+      "source_blob_sha": "88e23ca105b89e67f4085d0e676c40d4b170a623"
     },
     {
       "id": "pstack.tdd",
       "plugin_id": "pstack",
-      "source_path": "pstack/skills/tdd/SKILL.md"
+      "source_path": "pstack/skills/tdd/SKILL.md",
+      "source_url": "https://github.com/cursor/plugins/blob/5866df557357d005b3c0c9d3da0d9e739b4bdde3/pstack/skills/tdd/SKILL.md",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "source_file_hash": "eeb868e2dfebee528d730a67d7b17498fac4bb85dec2e38bc5c5176aca4d5d2f",
+      "source_blob_sha": "ca6f24c963001d9d518db2936dfe3d12f29b4e94"
     }
   ]
 }

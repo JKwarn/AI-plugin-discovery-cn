@@ -1,1 +1,24 @@
-{"schema_version":"1.0.0","plugins":[{"id":"pstack","name":"pstack"}]}
+{
+  "schema_version": "1.0.0",
+  "plugins": [
+    {
+      "id": "pstack",
+      "name": "pstack",
+      "source_revision": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "manifests": [
+        {
+          "path": "pstack/plugin.json",
+          "format": "agent-plugin",
+          "version": "0.15.36",
+          "source_blob_sha": "14b42b7225231a2f01ab225df1d9d13839c6d616"
+        },
+        {
+          "path": "pstack/.cursor-plugin/plugin.json",
+          "format": "cursor-plugin",
+          "version": "0.15.36",
+          "source_blob_sha": "1295f46878218d568a037344877f0b603a887696"
+        }
+      ]
+    }
+  ]
+}
