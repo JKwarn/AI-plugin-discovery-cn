@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jkwarn.github.io/AI-plugin-discovery-cn/schemas/translation-index.schema.json",
+  "title": "Skill 翻译注册表",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "translations"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "translations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/translation" }
+    }
+  },
+  "$defs": {
+    "translation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "skill_id", "locale", "path", "source_id", "source_path",
+        "source_url", "source_revision", "source_file_hash",
+        "source_blob_sha", "status", "translated_at"
+      ],
+      "properties": {
+        "skill_id": { "type": "string", "minLength": 1 },
+        "locale": { "const": "zh-CN" },
+        "path": {
+          "type": "string",
+          "pattern": "^content/skills/[a-z0-9][a-z0-9._-]*/SKILL\\.zh-CN\\.md$"
+        },
+        "source_id": { "type": "string", "minLength": 1 },
+        "source_path": { "type": "string", "minLength": 1 },
+        "source_url": { "type": "string", "format": "uri" },
+        "source_revision": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "source_file_hash": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "source_blob_sha": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "status": { "enum": ["draft", "reviewed"] },
+        "translated_at": { "type": "string", "format": "date-time" },
+        "reviewed_at": { "type": "string", "format": "date-time" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "reviewed" } }, "required": ["status"] },
+          "then": { "required": ["reviewed_at"] }
+        }
+      ]
+    }
+  }
+}
