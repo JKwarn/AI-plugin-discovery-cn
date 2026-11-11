@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/JKwarn/AI-plugin-discovery-cn/main/schemas/assignment.schema.json",
+  "title": "Skill taxonomy assignments",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "assignments"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "assignments": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9][a-z0-9._/-]*$"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/skillAssignment"
+      }
+    }
+  },
+  "$defs": {
+    "skillAssignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dimensions"
+      ],
+      "properties": {
+        "dimensions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "functions",
+            "roles",
+            "scenarios",
+            "tags"
+          ],
+          "properties": {
+            "functions": {
+              "$ref": "#/$defs/assignmentList"
+            },
+            "roles": {
+              "$ref": "#/$defs/assignmentList"
+            },
+            "scenarios": {
+              "$ref": "#/$defs/assignmentList"
+            },
+            "tags": {
+              "$ref": "#/$defs/assignmentList"
+            }
+          }
+        }
+      }
+    },
+    "assignmentList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "category_id",
+          "reason",
+          "confidence",
+          "status"
+        ],
+        "properties": {
+          "category_id": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "status": {
+            "enum": [
+              "proposed",
+              "approved",
+              "rejected"
+            ]
+          },
+          "reviewed_by": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reviewed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "source_revision": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "classifier_version": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

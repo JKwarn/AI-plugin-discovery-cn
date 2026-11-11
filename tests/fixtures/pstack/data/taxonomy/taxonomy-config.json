@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "taxonomy_version": "1.0.0",
+  "dimensions": ["functions", "roles", "scenarios", "tags"],
+  "id_prefixes": {
+    "functions": "function.",
+    "roles": "role.",
+    "scenarios": "scenario.",
+    "tags": "tag."
+  }
+}

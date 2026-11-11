@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "taxonomy_version": "1.0.0",
+  "dimension": "roles",
+  "nodes": [
+    {
+      "id": "role.software_developer",
+      "slug": "software-developer",
+      "name": {
+        "zh-CN": "软件开发者",
+        "en": "Software Developer"
+      },
+      "description": {
+        "zh-CN": "软件开发者相关能力",
+        "en": "Capabilities related to software developer"
+      },
+      "parent_id": null,
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "role.software_architect",
+      "slug": "software-architect",
+      "name": {
+        "zh-CN": "软件架构师",
+        "en": "Software Architect"
+      },
+      "description": {
+        "zh-CN": "软件架构师相关能力",
+        "en": "Capabilities related to software architect"
+      },
+      "parent_id": null,
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    }
+  ]
+}

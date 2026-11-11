@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/JKwarn/AI-plugin-discovery-cn/main/schemas/taxonomy-config.schema.json",
+  "title": "Taxonomy configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "taxonomy_version",
+    "dimensions"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "taxonomy_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "dimensions": {
+      "type": "array",
+      "const": [
+        "functions",
+        "roles",
+        "scenarios",
+        "tags"
+      ]
+    },
+    "id_prefixes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "functions",
+        "roles",
+        "scenarios",
+        "tags"
+      ],
+      "properties": {
+        "functions": {
+          "const": "function."
+        },
+        "roles": {
+          "const": "role."
+        },
+        "scenarios": {
+          "const": "scenario."
+        },
+        "tags": {
+          "const": "tag."
+        }
+      }
+    }
+  }
+}

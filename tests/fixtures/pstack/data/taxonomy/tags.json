@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "taxonomy_version": "1.0.0",
+  "dimension": "tags",
+  "nodes": [
+    {
+      "id": "tag.read_only",
+      "slug": "read-only",
+      "name": {
+        "zh-CN": "只读分析",
+        "en": "Read-only Analysis"
+      },
+      "description": {
+        "zh-CN": "只读分析相关能力",
+        "en": "Capabilities related to read-only analysis"
+      },
+      "parent_id": null,
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "tag.architecture",
+      "slug": "architecture",
+      "name": {
+        "zh-CN": "架构",
+        "en": "Architecture"
+      },
+      "description": {
+        "zh-CN": "架构相关能力",
+        "en": "Capabilities related to architecture"
+      },
+      "parent_id": null,
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "tag.test_driven",
+      "slug": "test-driven",
+      "name": {
+        "zh-CN": "测试驱动",
+        "en": "Test-driven"
+      },
+      "description": {
+        "zh-CN": "测试驱动相关能力",
+        "en": "Capabilities related to test-driven"
+      },
+      "parent_id": null,
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    }
+  ]
+}
