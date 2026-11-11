@@ -2,5 +2,78 @@
   "schema_version": "1.0.0",
   "taxonomy_version": "1.0.0",
   "dimension": "scenarios",
-  "nodes": []
+  "nodes": [
+    {
+      "id": "scenario.software_development_maintenance",
+      "slug": "software-development-maintenance",
+      "name": {
+        "zh-CN": "软件开发与维护",
+        "en": "Software Development and Maintenance"
+      },
+      "description": {
+        "zh-CN": "软件开发与维护相关能力",
+        "en": "Capabilities related to software development and maintenance"
+      },
+      "parent_id": null,
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "scenario.understand_existing_subsystem",
+      "slug": "understand-existing-subsystem",
+      "name": {
+        "zh-CN": "理解现有子系统",
+        "en": "Understand an Existing Subsystem"
+      },
+      "description": {
+        "zh-CN": "理解现有子系统相关能力",
+        "en": "Capabilities related to understand an existing subsystem"
+      },
+      "parent_id": "scenario.software_development_maintenance",
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "scenario.design_cross_boundary_change",
+      "slug": "design-cross-boundary-change",
+      "name": {
+        "zh-CN": "设计跨模块变更",
+        "en": "Design a Cross-Boundary Change"
+      },
+      "description": {
+        "zh-CN": "设计跨模块变更相关能力",
+        "en": "Capabilities related to design a cross-boundary change"
+      },
+      "parent_id": "scenario.software_development_maintenance",
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "scenario.fix_bug_with_regression_test",
+      "slug": "fix-bug-with-regression-test",
+      "name": {
+        "zh-CN": "修复缺陷并添加回归测试",
+        "en": "Fix a Bug with a Regression Test"
+      },
+      "description": {
+        "zh-CN": "修复缺陷并添加回归测试相关能力",
+        "en": "Capabilities related to fix a bug with a regression test"
+      },
+      "parent_id": "scenario.software_development_maintenance",
+      "aliases": [],
+      "status": "active",
+      "sort_order": 0,
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    }
+  ]
 }
