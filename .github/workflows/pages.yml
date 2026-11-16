@@ -1,0 +1,63 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v5
+
+      - name: 设置 Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: 安装开发依赖
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: 运行测试
+        run: python -m pytest
+
+      - name: 校验数据
+        run: |
+          python scripts/validate/validate_taxonomy.py
+          python scripts/validate/validate_taxonomy_contract.py
+          python scripts/validate/validate_translations.py
+
+      - name: 构建静态网站
+        run: python scripts/build/build_site.py --output-dir dist
+
+      - name: 上传 Pages 构建产物
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

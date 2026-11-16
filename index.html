@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa">
+  <meta name="description" content="面向中文用户的 AI Plugin 与 Skill 发现平台。">
+  <title>AI 插件发现平台</title>
+  <link rel="stylesheet" href="./assets/css/site.css">
+  <script defer src="./assets/js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="AI 插件发现平台首页">
+      <span class="brand-mark">A</span>
+      <span>AI 插件发现平台</span>
+    </a>
+    <nav class="top-nav" aria-label="主导航">
+      <a href="#discover" data-nav="discover">发现</a>
+      <a href="#plugins" data-nav="plugins">Plugins</a>
+      <a href="#skills" data-nav="skills">Skills</a>
+    </nav>
+    <button id="language-toggle" class="language-toggle" type="button">EN</button>
+  </header>
+
+  <main id="app" class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">CURATED AI WORKFLOWS</p>
+        <h1 data-i18n="heroTitle">找到适合你的 AI 工作流</h1>
+        <p class="hero-description" data-i18n="heroDescription">
+          浏览插件与 Skill，按能力、角色和任务场景发现可复用的工作方式。
+        </p>
+        <label class="search-box">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" autocomplete="off"
+                 data-i18n-placeholder="searchPlaceholder"
+                 placeholder="搜索 Plugin、Skill 或关键词">
+          <kbd>⌘ K</kbd>
+        </label>
+        <div class="hero-meta" id="hero-meta"></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="orbit-core">AI</div><span class="orbit-node node-one">✳</span>
+        <span class="orbit-node node-two">⌘</span><span class="orbit-node node-three">◇</span>
+      </div>
+    </section>
+
+    <section class="stats" id="stats" aria-label="资源统计"></section>
+
+    <div class="content-layout" id="discover">
+      <aside class="sidebar">
+        <div class="sidebar-heading" data-i18n="browseBy">按维度浏览</div>
+        <div id="taxonomy-nav"></div>
+        <div class="sidebar-note">
+          <strong data-i18n="dataNoteTitle">数据说明</strong>
+          <p data-i18n="dataNote">分类仅展示已审核关联；尚未审核的候选不会作为正式分类结果。</p>
+        </div>
+      </aside>
+
+      <section class="results-area">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="section-kicker">DISCOVER</p>
+            <h2 id="results-title" data-i18n="allResources">全部资源</h2>
+            <p id="results-description" class="muted" data-i18n="allResourcesDesc">浏览当前收录的 Plugin 与 Skill。</p>
+          </div>
+          <div class="view-switch" role="group" aria-label="资源类型">
+            <button type="button" class="view-button active" data-view="all" data-i18n="all">全部</button>
+            <button type="button" class="view-button" data-view="plugins">Plugins</button>
+            <button type="button" class="view-button" data-view="skills">Skills</button>
+          </div>
+        </div>
+        <div id="active-filter" class="active-filter" hidden></div>
+        <div id="results" class="resource-grid" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state" hidden>
+          <span>⌕</span><h3 data-i18n="emptyTitle">没有找到匹配的资源</h3>
+          <p data-i18n="emptyDescription">试试其他关键词，或清除当前筛选条件。</p>
+          <button type="button" id="clear-filters" class="text-button" data-i18n="clearFilters">清除筛选</button>
+        </div>
+      </section>
+    </div>
+
+    <section id="detail-view" class="detail-view" hidden></section>
+  </main>
+
+  <footer class="footer">
+    <span>AI Plugin Discovery CN</span>
+    <span><span data-i18n="poweredBy">数据来源</span>：<a href="https://github.com/cursor/plugins" target="_blank" rel="noreferrer">cursor/plugins</a></span>
+    <a href="https://github.com/JKwarn/AI-plugin-discovery-cn" target="_blank" rel="noreferrer">GitHub</a>
+  </footer>
+  <noscript>此网站需要启用 JavaScript 才能浏览资源。</noscript>
+</body>
+</html>
