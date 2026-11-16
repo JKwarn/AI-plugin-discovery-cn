@@ -32,7 +32,7 @@
 
 ## 项目状态
 
-当前处于**基础结构与数据规范建设阶段**。数据模型和 JSON Schema 尚未冻结；自动化工作流、网站和公开数据集将在基础校验稳定后逐步加入。
+当前已具备上游数据同步、四维分类数据模型、分类候选生成、译文来源追踪和首版静态网站。网站通过 GitHub Pages 构建与部署；首次部署需要在仓库 Settings → Pages 中将 Source 设置为 GitHub Actions。
 
 ## 计划中的主要模块
 
@@ -58,3 +58,15 @@
 ## 维护方式
 
 项目以 GitHub 网页维护和 GitHub Actions 自动化为主要工作方式。涉及正式分类、Schema 或自动化逻辑的变更应通过 Pull Request 审查。
+
+
+## 网站与本地预览
+
+网站入口为仓库根目录的 `index.html`。静态构建命令：
+
+```bash
+python scripts/build/build_site.py --output-dir dist
+python -m http.server 8000 --directory dist
+```
+
+首次启用 GitHub Pages 时，在仓库 **Settings → Pages → Build and deployment → Source** 中选择 **GitHub Actions**。部署状态和最终访问地址以 Actions 的 Pages deployment 工作流为准。
