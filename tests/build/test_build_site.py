@@ -4,20 +4,28 @@ from pathlib import Path
 from scripts.build.build_site import build_catalog, build_site
 
 
-def test_catalog_contains_active_plugins_and_skills(data_dir):
-    project_root = data_dir.parent.parent
-    catalog = build_catalog(project_root)
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+
+def test_catalog_contains_active_plugins_and_skills():
+    catalog = build_catalog(PROJECT_ROOT)
 
     assert catalog["counts"]["plugins"] > 0
     assert catalog["counts"]["skills"] > 0
-    assert all(skill["plugin_id"] in {p["id"] for p in catalog["plugins"]}
-               for skill in catalog["skills"])
+    plugin_ids = {plugin["id"] for plugin in catalog["plugins"]}
+    assert all(skill["plugin_id"] in plugin_ids for skill in catalog["skills"])
 
 
-def test_build_site_copies_reviewed_translations(tmp_path, data_dir):
-    project_root = data_dir.parent.parent
+def test_catalog_taxonomy_nodes_retain_their_dimension():
+    catalog = build_catalog(PROJECT_ROOT)
+
+    for dimension, nodes in catalog["taxonomy"].items():
+        assert all(node["dimension"] == dimension for node in nodes)
+
+
+def test_build_site_copies_reviewed_translations(tmp_path):
     output = tmp_path / "dist"
-    catalog = build_site(project_root, output)
+    catalog = build_site(PROJECT_ROOT, output)
 
     assert (output / "index.html").is_file()
     assert (output / "assets" / "js" / "app.js").is_file()
@@ -30,10 +38,9 @@ def test_build_site_copies_reviewed_translations(tmp_path, data_dir):
             assert (output / translation["path"]).is_file()
 
 
-def test_build_refuses_project_root_as_output(tmp_path, data_dir):
-    project_root = data_dir.parent.parent
+def test_build_refuses_project_root_as_output():
     try:
-        build_site(project_root, project_root)
+        build_site(PROJECT_ROOT, PROJECT_ROOT)
     except ValueError as exc:
         assert "项目根目录" in str(exc)
     else:
