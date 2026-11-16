@@ -38,9 +38,12 @@ def build_catalog(project_root: Path) -> dict[str, Any]:
 
     taxonomy: dict[str, list[dict[str, Any]]] = {}
     for dimension in DIMENSIONS:
-        taxonomy[dimension] = read_json(
-            data_dir / "taxonomy" / f"{dimension}.json"
-        ).get("nodes", [])
+        taxonomy[dimension] = [
+            {**node, "dimension": dimension}
+            for node in read_json(
+                data_dir / "taxonomy" / f"{dimension}.json"
+            ).get("nodes", [])
+        ]
 
     aggregation = aggregate_taxonomy(data_dir)
     approved_by_skill: dict[str, dict[str, list[dict[str, Any]]]] = {}
